@@ -6,6 +6,10 @@
 
 \blurb{Linear least-squares, also known as ordinary linear regression, is a  basic optimization problem used for data fitting. It's also a fundamental building block for algorithms meant for more general problems.}
 
+### Required Reading
+
+- [Sections 3.1--3.2](https://doi.org/10.1137/1.9781611973655.ch3) of Beck. 
+
 ## Example: Multilinear regression
 
 We begin with a simple example and use linear regression to build a model that relates the fuel efficiency of a car with its weight, engine displacement, and engine horsepower.  Load the [`mtcars`](https://vincentarelbundock.github.io/Rdatasets/doc/datasets/mtcars.html) dataset provided in the [`Rdatasets.jl`](https://github.com/JuliaStats/RDatasets.jl) package:

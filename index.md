@@ -2,37 +2,40 @@
 
 # Course description
 
-\lineskip
+\blurb{This course covers the main algorithms for continuous optimization, including unconstrained and constrained problems, and duality theory and sensitivity. Because linear algebra is central to the subject, the course also covers the main numerical linear algebra operations needed in optimization, including LU, QR, and Cholesky.}
 
 \tableofcontents <!-- you can use \toc as well -->
 
-## Overview
-
-This course covers the main algorithms for continuous optimization, including unconstrained and constrained problems, large-scale problems, and duality theory and sensitivity. It also covers the main numerical linear algebra operations needed in optimization, including LU, QR, and Cholesky. Discrete optimization problems are not covered.
-
 ## Lectures
 
+[PiazzaLink]: http://piazza.com/ubc.ca/winterterm22021/cpsc406/home
+
 - Mondays, Wednesdays, and Fridays, 2-3 pm
-- [Hugh Dempster Pavillion (DMP 110)](https://ssc.adm.ubc.ca/classroomservices/function/viewlocation?userEvent=ShowLocation&buildingID=DMP&roomID=110)
+- Online via Zoom until further notice (see [Piazza][PiazzaLink] for Zoom link)
+<!-- - [Hugh Dempster Pavillion (DMP 110)](https://ssc.adm.ubc.ca/classroomservices/function/viewlocation?userEvent=ShowLocation&buildingID=DMP&roomID=110) -->
 
 ## Teaching staff
-* Instructor: [Michael P. Friedlander](https://friedlander.io)
-    * Office hours: Mondays 3-4 pm or by appointment
-    * Location: [Online](https://canvas.ubc.ca/courses/58984/external_tools/15408)
-    
-* Teaching Assistants: Curtis Fox, Naomi Graham, Hamed Shirzad
-    *  Office hours TBD
 
-## Textbook
-[*Introduction to Nonlinear Optimization: Theory, Algorithms, and Applications with MATLAB*](https://epubs.siam.org/doi/book/10.1137/1.9781611973655), Amir Beck (SIAM, 2014). This book is available online through the UBC Library.
+* Instructor: [Michael P. Friedlander](https://friedlander.io)
+    * Office hours: Mondays 3-4 pm (see [Piazza][PiazzaLink] for Zoom link)
+    
+* Teaching Assistants:
+  * Curtis Fox, office hours: TBD
+  * Naomi Graham, office hours: TBD
+  * Hamed Shirzad, office hours: TBD
+
 
 ## Course requirements
-One of CPSC 302, CPSC 303, or MATH 307.
 
-## Online Etiquette
-* During class, students will be fully engaged with the class, to the best of their ability. 
-* Students are encouraged to leave their video connection on for the majority of the class, especially during breakout-room sessions.
-* Students should willingly volunteer to answer questions and should be prepared to be called upon to answer questions if needed. Please mute your mic when you are not speaking.
+One of the following courses are required: CPSC 302 (Numerical Computation for Algebraic Problems), CPSC 303 (Numerical Approximation and Discretization), or MATH 307 (Applied Linear Algebra). You should be comfortable with an the main topics in applied linear algebra, multivariate calculus, and have experience in a numerical computing using a language such as Julia, Matlab, or Python.
 
-## Course discussion board
-Discussion board is hosted on Piazza. Students can signup using the following [link](https://piazza.com/ubc.ca/winterterm22020/cpsc406).
+This courses uses [Julia](https://julialang.org/) exclusively.
+
+## Required reading
+
+The course is based on a variety of sources, including lecture notes provided on these pages, which also provide links to supplementary reading materials. 
+
+## Discussion board and announcements
+
+A student discussion board is hosted on [Piazza][PiazzaLink]. All course announcements, including upcoming exams and homework deadlines, will appear on Piazza. Set your Piazza notifications appropriately. 
+  \note{[Register](piazza.com/ubc.ca/winterterm22021/cpsc406) for the Piazza board.}
