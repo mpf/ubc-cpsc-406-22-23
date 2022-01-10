@@ -11,10 +11,11 @@
     <div class="menu" id="side-menu">
       <ul class="menu-list">
         <li class="menu-list-parent {{ispage index}}active{{end}}"><a href="/" class="menu-list-link">Home</a>
+        <li class="menu-list-parent {{ispage index}}active{{end}}"><a href="/grades/" class="menu-list-link">Grades</a>
         <li class="menu-list-parent {{ispage notes/*}}active{{end}}"><a href="/notes/" class="menu-list-link">Schedule</a>
           <ul class="menu-list-child-list ">
             <li class="menu-list-item {{ispage notes/least-squares}}active{{end}}"><a href="/notes/least-squares" class="menu-list-link">Least-squares</a>
-            <li class="menu-list-item {{ispage notes/qr-factorization}}active{{end}}"><a href="/notes/qr-factorization" class="menu-list-link">Column orthogonalization</a>
+            <li class="menu-list-item {{ispage notes/qr-factorization}}active{{end}}"><a href="/notes/qr-factorization" class="menu-list-link">QR</a>
           </ul> 
       </ul>
     </div>
@@ -27,7 +28,7 @@
     <div class="main-content">    <!-- closed in foot.html -->
       <div class="main-header">
         <a name="pagetop"></a>
-        <a id="github" href="{{ github }}/blob/master/{{fd_rpath}}">Page source</a>
+        <a id="github" href="{{ github }}/blob/main/{{fd_rpath}}">Page source</a>
 		    <span style="width:30px; text-align: center;color:lightgray;">|</span>
         <a id="github" href="{{ github }}">GitHub repo</a>
       </div>

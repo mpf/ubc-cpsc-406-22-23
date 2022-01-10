@@ -1,4 +1,4 @@
-# Column Orthogonalization
+# QR Factorization
 
 \blurb{The QR factorization of a matrix constructs an orthgonal basis for its columnspace. It's also one of the best computational tools for solving least-squares problems.}
 
@@ -157,12 +157,12 @@ The QR factorization can be used to solve the least squares problem
 
 Assume throughout this section that $A$ has full columns rank, and hence $m\geq n$. (The QR factorization also can be used to solve the more general problem, but we don't consider that case here.) Let $A = QR$ be the QR factorization shown in \eqref{eq:qr-fact}. Because the 2-norm is invariant under orthogonal rotation,
 
-\begin{align*}
-\| A  x -b\|^2
+\begin{align} \label{eq:ls-derivation}
+\|Ax -b\|^2
 & = \| Q \T ( Ax -b)\|^2\\
 &=\left\|\bmat{R_1\\0} x -\bmat{Q_1^T\\Q_2^T}b\right\|^2\\
 & = \|R_1x  - Q_1^T b\|^2+\|Q_2^T b\|^2.
-\end{align*}
+\end{align} 
 
 Hence, minimizing $\|R_1 x - Q_1^T b\|$ also minimizes $\|Ax-b\|$. Because $ A $ is full rank,
 $R_1$ is nonsingular, and the least-squares solution is obtained as the unique solution of the system 
@@ -197,10 +197,11 @@ r = b - A*x
 ```
 \show{./code/qr-ls}
 
+The last line of the derivation shown in \eqref{eq:ls-derivation} asserts that the norm of the residual is equal to the norm of $Q_2^b$. Let's check:
+
 ```julia:./code/qr-ls
 Q₂ = F.Q[:,n+1:end]
-@show norm(Q₂'b)
-@show norm(r)
+norm(Q₂'b) ≈ norm(r)
 ```
 \show{./code/qr-ls}
 

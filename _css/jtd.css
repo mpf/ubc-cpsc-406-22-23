@@ -163,7 +163,7 @@ SIDE BAR
 .side-bar {
   z-index: 100;
   display: flex;
-  flex-wrap: no-wrap;
+  flex-wrap: wrap;
   background-color: #f5f6fa;
 }
 

@@ -59,47 +59,47 @@ Week 8
 
 - 28 Feb (Mon): Coordinate descent
 -  2 Mar (Wed): Stochastic gradient descent
--  4 Mar (Fri)
+-  4 Mar (Fri): TBD
 
 ----
 Week 9
 
 
--  7 Mar (Mon)
--  9 Mar (Wed)
-- 11 Mar (Fri)
+-  7 Mar (Mon): TBD
+-  9 Mar (Wed): TBD
+- 11 Mar (Fri): TBD
 
 ----
 Week 10
 
 
-- 14 Mar (Mon)
-- 16 Mar (Wed)
-- 18 Mar (Fri)
+- 14 Mar (Mon): TBD
+- 16 Mar (Wed): TBD
+- 18 Mar (Fri): TBD
 
 ----
 Week 11
 
 
-- 21 Mar (Mon)
-- 23 Mar (Wed)
-- 25 Mar (Fri)
+- 21 Mar (Mon): TBD
+- 23 Mar (Wed): TBD
+- 25 Mar (Fri): TBD
 
 ----
 Week 12
 
 
-- 28 Mar (Mon)
-- 30 Mar (Wed)
--  1 Apr (Fri)
+- 28 Mar (Mon): TBD
+- 30 Mar (Wed): TBD
+-  1 Apr (Fri): TBD
 
 ----
 Week 13
 
 
--  4 Apr (Mon)
--  6 Apr (Wed)
--  8 Apr (Fri) last-day of class
+-  4 Apr (Mon): TBD
+-  6 Apr (Wed): TBD
+-  8 Apr (Fri, last-day of class): TBD
   
 ----
 

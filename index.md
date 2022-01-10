@@ -1,8 +1,8 @@
-@def title = "Computational Optimization"
+# Computational Optimization
 
-# Course description
+CPSC 406 ∙ [Department of Computer Science](https://www.cs.ubc.ca) ∙ [UBC](https://www.ubc.ca)
 
-\blurb{This course covers the main algorithms for continuous optimization, including unconstrained and constrained problems, and duality theory and sensitivity. Because linear algebra is central to the subject, the course also covers the main numerical linear algebra operations needed in optimization, including LU, QR, and Cholesky.}
+\blurb{This course covers the main algorithms for continuous optimization, including unconstrained and constrained problems, and duality theory and sensitivity. Because linear algebra is central to the subject, the course also covers the main numerical linear algebra operations needed in optimization.}
 
 \tableofcontents <!-- you can use \toc as well -->
 
@@ -12,6 +12,7 @@
 
 - Mondays, Wednesdays, and Fridays, 2-3 pm
 - Online via Zoom until further notice (see [Piazza][PiazzaLink] for Zoom link)
+
 <!-- - [Hugh Dempster Pavillion (DMP 110)](https://ssc.adm.ubc.ca/classroomservices/function/viewlocation?userEvent=ShowLocation&buildingID=DMP&roomID=110) -->
 
 ## Teaching staff
@@ -38,4 +39,5 @@ The course is based on a variety of sources, including lecture notes provided on
 ## Discussion board and announcements
 
 A student discussion board is hosted on [Piazza][PiazzaLink]. All course announcements, including upcoming exams and homework deadlines, will appear on Piazza. Set your Piazza notifications appropriately. 
-  \note{[Register](piazza.com/ubc.ca/winterterm22021/cpsc406) for the Piazza board.}
+
+\note{[Register](http://piazza.com/ubc.ca/winterterm22021/cpsc406) for the Piazza board.}
