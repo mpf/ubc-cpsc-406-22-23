@@ -6,11 +6,13 @@ This schedule corresponds to the semester January to April, 2022.
 Week 1
 
 - 10 Jan (Mon): Introduction 
+  - [HW0](../homework/hw0) out
 - 12 Jan (Wed): [Linear least-squares](least-squares)
 - 14 Jan (Fri): [QR Factorization](qr-factorization)
-
+  - HW0 due
 ----
 Week 2
+
 - 17 Jan (Mon): Regularized least-squares
 - 19 Jan (Wed): Gradients
 - 21 Jan (Fri): Nonlinear least-squares
