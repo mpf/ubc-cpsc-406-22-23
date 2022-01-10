@@ -34,7 +34,7 @@ jobs:
     #   specific arguments, see the documentation or ?optimize in the REPL.
     - run: julia -e '
             using Pkg; Pkg.activate("."); Pkg.instantiate();
-            using NodeJS; run(`$(npm_cmd()) install highlight.j@10.7`);
+            using NodeJS; run(`$(npm_cmd()) install highlight.js@10.7`);
             using Franklin;
             optimize(prepath="/ubc-cpsc-406/")'
     - name: Build and Deploy
