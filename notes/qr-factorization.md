@@ -2,6 +2,10 @@
 
 \blurb{The QR factorization of a matrix constructs an orthgonal basis for its columnspace. It's also one of the best computational tools for solving least-squares problems.}
 
+### Required Reading
+
+- [Orthogonal projection](https://ubcmath.github.io/MATH307/orthogonality/projection.html) and [QR decomposition](https://ubcmath.github.io/MATH307/orthogonality/qr.html) of UBC Math 307 [lecture notes](https://ubcmath.github.io/MATH307)
+
 ## Orthogonal and orthonormal vectors
 
 For any two $n$-vectors $x$ and $y$, the cosine identity
