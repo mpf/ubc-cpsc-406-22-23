@@ -42,6 +42,7 @@ website_url   = "https://friedlander.io/ubc-cpsc-406"
 <!--
 Add here global latex commands to use throughout your pages.
 -->
+\newcommand{\half}{\tfrac12}
 \newcommand{\T}{^T\!}
 \newcommand{\R}{\mathbb R}
 \newcommand{\ip}[1]{\langle #1 \rangle}
