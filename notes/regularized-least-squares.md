@@ -116,11 +116,11 @@ $$
 b = Ax + w,
 $$
 
-where we added the measurement matrix $A \in \R^{m\times n}$. The  corresponding wighted-sum least squares
+where we added the measurement matrix $A \in \R^{m\times n}$. The  corresponding weighted-sum least squares
 program is 
 
 \begin{equation}
-\min_{x\in\R^n} \frac{1}{2}\|Ax-b\|_2^2 + \frac{\gamma}{2}\|Dx\|_2^2,
+\min_{x\in\R^n} \frac{1}{2}\|Ax-b\|_2^2 + \frac{\lambda}{2}\|Dx\|_2^2,
 \end{equation}
 
 <!-- where $\|Dx\|_2^2$ is called the regularization penalty and $ \gamma $ is called the regularization 
@@ -135,5 +135,5 @@ $$
 and the corresponding normal equations is
 
 $$
-(A\T A + \gamma D\T D)x = A\T b.
+(A\T A + \lambda D\T D)x = A\T b.
 $$

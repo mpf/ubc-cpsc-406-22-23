@@ -201,7 +201,7 @@ r = b - A*x
 ```
 \show{./code/qr-ls}
 
-The last line of the derivation shown in \eqref{eq:ls-derivation} asserts that the norm of the residual is equal to the norm of $Q_2^b$. Let's check:
+The last line of the derivation shown in \eqref{eq:ls-derivation} asserts that the norm of the residual is equal to the norm of $Q_2^T b$. Let's check:
 
 ```julia:./code/qr-ls
 Q₂ = F.Q[:,n+1:end]
