@@ -155,9 +155,9 @@ R₁ = F.R
 
 The QR factorization can be used to solve the least squares problem
 
-\begin{equation*}
+\begin{equation} \label{eq:least-squares}
   \min_{x\in\R^n}\ \| A  x -b\|^2.
-\end{equation*}
+\end{equation}
 
 Assume throughout this section that $A$ has full columns rank, and hence $m\geq n$. (The QR factorization also can be used to solve the more general problem, but we don't consider that case here.) Let $A = QR$ be the QR factorization shown in \eqref{eq:qr-fact}. Because the 2-norm is invariant under orthogonal rotation,
 
@@ -171,9 +171,9 @@ Assume throughout this section that $A$ has full columns rank, and hence $m\geq 
 Hence, minimizing $\|R_1 x - Q_1^T b\|$ also minimizes $\|Ax-b\|$. Because $ A $ is full rank,
 $R_1$ is nonsingular, and the least-squares solution is obtained as the unique solution of the system 
 
-\begin{equation*}
+\begin{equation} \label{eq:ls-via-qr}
   R_1 x  = Q_1^T b.
-\end{equation*}
+\end{equation}
 
 The procedure for solving least-squares problems via the QR factorization can then be summarized as follows:
 
@@ -208,5 +208,79 @@ Q₂ = F.Q[:,n+1:end]
 norm(Q₂'b) ≈ norm(r)
 ```
 \show{./code/qr-ls}
+
+## QR versus the normal equations
+
+A solution $x^*$ of a full-rank least-squares problem \eqref{eq:least-squares} can be obtained as the solution of the normal equations:
+\begin{equation*}
+  A\T A x = A\T b.
+\end{equation*}
+This approach, however, can in some cases suffer from numerical instability, which means that floating-point computations used by most computers yield solutions with unacceptable errors. The QR approach, on the other hand, often allows us to solve a wider-range of problems. The next example, borrowed from the course on [Fundamentals of Numerical Computation](https://fncbook.github.io/fnc/leastsq/demos/normaleqns-instab.html), illustrates this point.
+
+The [Pythagorean identity](https://en.wikipedia.org/wiki/Pythagorean_trigonometric_identity) asserts that
+\begin{equation*}
+\sin^2(θ) + cos^2(θ) = 1
+\end{equation*}
+for all values of $\theta$. This implies that the matrix
+\begin{equation*}
+A = \bmat{
+      \sin^2(\theta_1) & \cos^2(\theta_1) & 1
+    \\ \vdots          & \vdots           & \vdots
+    \\\sin^2(\theta_m) & \cos^2(\theta_m) & 1
+},
+\end{equation*}
+for any values $\theta_1,\ldots,\theta_m$, doesn't have full column rank. Let's define a slightly perturbed version of this matrix that does have full column rank:
+```julia:qr-normal
+θ = LinRange(0,3,400)
+ε = 1e-7
+A = @. [sin(θ)^2   cos(θ+ε)^2   θ^0]
+```
+We can check that this matrix has full column rank:
+```julia:qr-normal-2
+rank(A)
+```
+\show{qr-normal-2}
+
+Now create a right-hand side that corresponds to a known solution `xᵉ`:
+```julia:qr-normal-3
+xᵉ = [1., 2., 1.]
+b  = A*xᵉ 
+```
+
+### Solution via the normal equations
+
+Here's the solution obtained via the normal equations, and its corresponding relative error:
+```julia:qr-normal-4
+xⁿ = A'A \ A'b
+eⁿ = norm(xᵉ - xⁿ) / norm(xᵉ)
+@show xⁿ
+@show eⁿ
+```
+\show{qr-normal-4}
+This solution has only about 1 digit of accuracy.
+
+### Solution via QR factorization
+
+Here's the solution obtained via the QR factorization, and its corresponding relative error:
+```julia:qr-normal-5
+Q, R = qr(A); Q = Matrix(Q)
+xʳ = R \ (Q'b)
+eʳ = norm(xᵉ - xʳ) / norm(xᵉ)
+@show xʳ
+@show eʳ
+```
+\show{qr-normal-5}
+
+Clearly, this solution is much more accurate than that obtained via the normal equations. The cost is essentially the same, so there's no real downside to using QR. In general, we can use QR implicitly via the backslash operator, which organizes its computations in a slightly different way, and obtains even better accuracy:
+```julia:qr-normal-6
+xᵇ = A \ b
+eᵇ = norm(xᵉ - xᵇ) / norm(xᵉ)
+@show xᵇ
+@show eᵇ
+```
+\show{qr-normal-6}
+
+
+
 
 [^1]: See section 5.2 of Golub and Van Loan, _Matrix Computations_ (4th ed.), 2013.
