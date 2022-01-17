@@ -13,7 +13,7 @@ Week 1
 ----
 Week 2
 
-- 17 Jan (Mon): Regularized least-squares
+- 17 Jan (Mon): [Regularized least-squares](regularized-least-squares.md)
 - 19 Jan (Wed): Gradients
 - 21 Jan (Fri): Nonlinear least-squares
 
