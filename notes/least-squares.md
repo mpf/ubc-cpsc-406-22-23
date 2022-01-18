@@ -260,11 +260,3 @@ savefig(joinpath(@OUTPUT,"ls-n2o-3")) # hide
 ```
 \fig{ls-n2o-3}
 
-## Exercises
-
-1. Compute the least-squares solution $x^*$ corresponding to the matrix and vector
-\begin{equation*}
-A = \begin{bmatrix} 1 \\ \vdots \\ 1 \end{bmatrix} = e \in \R^m \quad \text{ and } \quad 
-b = \begin{bmatrix} b_1 \\ \vdots \\ b_m \end{bmatrix}.
-\end{equation*}
-
