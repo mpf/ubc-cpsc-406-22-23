@@ -83,6 +83,8 @@ where
 \end{equation*}
 respectively, are an $m$-by-$m$ orthogonal matrix and an $m$-by-$n$ upper-triangular matrix. This factorization isn't unique, unless we impose additional conditions on the factors $Q$ and $R$.
 
+[Householder reflectors](https://en.wikipedia.org/wiki/Householder_transformation) and [Givens rotations](https://en.wikipedia.org/wiki/Givens_rotation) are the preferred methods for computing the QR factorization. These methods require $\Omicron(m^2n)$ flops to complete.
+
 The columns of the orthogonal matrix $Q$ reveal an orthogonal basis for the range of $A,$ and so triangularity of $R$ gives a simple "recipe" for reconstructing the columns of $A=[a_1,\ldots,a_n]$ from those of $Q$:
 \begin{align*}
    a_1 &= r_{11} q_1
