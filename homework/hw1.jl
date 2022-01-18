@@ -94,6 +94,12 @@ x_1 := \arg\max\ \tfrac12\|Sx-b\|, \quad\text{with}\quad S = D[:, j_0].
 We then repeat the iteration by updating the residual as $r_1=b - Sx_1$ and finding the largenst element of $|z_1|$, where $z_1:=D^T r_1$, and so on.
 """
 
+# ╔═╡ d532f991-33a2-4560-a510-1522df1bdfdc
+md"""
+!!! do
+    Fix the next cell by completing the lines marked `fill in`
+"""
+
 # ╔═╡ ca578974-6695-4b5a-a14d-85faa04ac4a1
 "Solve a sequence of least-squares problems. Returns the indices `idx` and corresponding coefficients"
 function lsup(D, b; its=4)
@@ -110,13 +116,11 @@ function lsup(D, b; its=4)
 	return idx, x
 end
 
-# ╔═╡ 185e88f6-f3cb-4b68-9686-69cb6a1eaf8b
-# Plot the recovered signal using `lsup`
-# let
-#     idx, xs = lsup(D, b, its=2)
-# 	s_up = D[:,idx]*xs
-# 	plot([s s_up], w=[2 1], label=["true signal `s`" "recovered signal"])
-# end
+# ╔═╡ db870974-0ecb-43d8-b8e3-82671c09dd05
+md"""
+!!! do
+    This next cell should work once you get `lsup` defined.
+"""
 
 # ╔═╡ 635d79b5-989f-492d-b101-250f1c5c25b6
 md"""
@@ -171,6 +175,14 @@ let
 	x = D \ b
 	s_LS = D*x
 	plot([s s_LS], w=[2 1], label=["true signal `s`" "recovered signal via least-squares"])
+end
+
+# ╔═╡ 185e88f6-f3cb-4b68-9686-69cb6a1eaf8b
+# Plot the recovered signal
+let
+    idx, xs = lsup(D, b, its=2)
+	s_up = D[:,idx]*xs
+	plot([s s_up], w=[2 1], label=["true signal `s`" "recovered signal"])
 end
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
@@ -1107,11 +1119,13 @@ version = "0.9.1+5"
 # ╟─27d6b83b-cce4-4821-b89f-5e996a37a445
 # ╠═5d52aca1-df32-4cf4-a334-f2b9cf255a60
 # ╟─9b8106ca-5e69-4de1-b523-c77fbec4076d
+# ╠═d532f991-33a2-4560-a510-1522df1bdfdc
 # ╠═ca578974-6695-4b5a-a14d-85faa04ac4a1
+# ╟─db870974-0ecb-43d8-b8e3-82671c09dd05
 # ╠═185e88f6-f3cb-4b68-9686-69cb6a1eaf8b
 # ╟─635d79b5-989f-492d-b101-250f1c5c25b6
 # ╠═5d2515b8-dc83-4a62-a3c7-38480a3246e1
-# ╠═b34d0256-fb12-4148-a29d-c562c635f8c7
+# ╟─b34d0256-fb12-4148-a29d-c562c635f8c7
 # ╟─a7f3b7fe-c50c-4f5d-9a6d-5d14dfd7949a
 # ╟─3502dd92-178e-4d26-9c5c-a047183c3823
 # ╟─00000000-0000-0000-0000-000000000001
