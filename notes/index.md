@@ -19,38 +19,38 @@ Week 2
 
 - 17 Jan (Mon): [Regularized least-squares](regularized-least-squares)
   - [HW1](../homework/hw1) out
-- 19 Jan (Wed): Gradients
-- 21 Jan (Fri): Nonlinear least-squares
+- 19 Jan (Wed): Regularizated least-squares
+- 21 Jan (Fri): Gradients
   - [HW1](../homework/hw1) due
 
 ----
 Week 3
 
-- 24 Jan (Mon): Unconstrained optimization
-- 26 Jan (Wed): Descent methods
-- 28 Jan (Fri): Quadratic problems
+- 24 Jan (Mon): Nonlinear least-squares
+- 26 Jan (Wed): Unconstrained optimization
+- 28 Jan (Fri): Descent methods
 
 ----
 Week 4
 
-- 31 Jan (Mon): Cholesky factorization
--  2 Feb (Wed): Newton's method
--  4 Feb (Fri): Quasi-Newton methods
+- 31 Jan (Mon): Quadratic problems
+-  2 Feb (Wed): Cholesky factorization
+-  4 Feb (Fri): Newton's method
 
 ----
 Week 5
 
 
--  7 Feb (Mon): Linearly-constrained problems
--  9 Feb (Wed): Convex functions
-- 11 Feb (Fri): Convex sets
+-  7 Feb (Mon): Quasi-Newton methods
+-  9 Feb (Wed): Linearly-constrained problems
+- 11 Feb (Fri): Convex functions
 
 ----
 Week 6
 
 
-- 14 Feb (Mon): Projected gradient method
-- 16 Feb (Wed): Midterm review
+- 14 Feb (Mon): Convex sets
+- 16 Feb (Wed): Projected gradient method
 - 18 Feb (Fri): Midterm exam
 
 ----
