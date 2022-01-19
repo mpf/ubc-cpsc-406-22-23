@@ -19,8 +19,9 @@ Week 2
 
 - 17 Jan (Mon): [Regularized least-squares](regularized-least-squares)
   - [HW1](../homework/hw1) out
-- 19 Jan (Wed): Regularizated least-squares
+- 19 Jan (Wed): Regularizated least-squares (continued)
 - 21 Jan (Fri): Gradients
+  - Required reading: Chapter 2 of [Algorithms for Optimization](https://algorithmsbook.com/optimization/files/optimization.pdf)
   - [HW1](../homework/hw1) due
 
 ----
