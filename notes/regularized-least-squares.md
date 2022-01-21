@@ -140,7 +140,7 @@ $$
 $$
 
 ```julia:ls-reg-noisy2
-finiteDiff(n) = diagm(ones(n)) - diagm(+1 => ones(n-1))
+finiteDiff(n) = (diagm(ones(n)) - diagm(+1 => ones(n-1)))[1:n-1]
 finiteDiff(4)
 ```
 \show{ls-reg-noisy2}
@@ -152,7 +152,7 @@ D = finiteDiff(n)
 ```julia:ls-reg-noisy3
 λ = 100
 plot(t, b, leg =:topleft, label="noisy data")
-b̂ = [ b; zeros(n)]
+b̂ = [ b; zeros(n-1)]
 for λ in LinRange(100,5000,5) 
     Â = [ I; √λ*D ]
     xLS = Â \ b̂
