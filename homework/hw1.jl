@@ -89,7 +89,7 @@ largest in magnitude, i.e., choose the element
 ```
 We then pull that column from $D$ and solve a new LS problem
 ```math
-x_1 := \arg\max\ \tfrac12\|Sx-b\|, \quad\text{with}\quad S = D[:, j_0].
+x_1 := \arg\min\ \tfrac12\|Sx-b\|^2, \quad\text{with}\quad S = D[:, j_0].
 ```
 We then repeat the iteration by updating the residual as $r_1=b - Sx_1$ and finding the largenst element of $|z_1|$, where $z_1:=D^T r_1$, and so on.
 """
@@ -695,9 +695,9 @@ version = "8.44.0+0"
 
 [[deps.Parsers]]
 deps = ["Dates"]
-git-tree-sha1 = "92f91ba9e5941fc781fecf5494ac1da87bdac775"
+git-tree-sha1 = "d7fa6237da8004be601e19bd6666083056649918"
 uuid = "69de0a69-1ddd-5017-9359-2bf0b02dc9f0"
-version = "2.2.0"
+version = "2.1.3"
 
 [[deps.Pixman_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg"]
@@ -837,9 +837,9 @@ version = "0.33.14"
 
 [[deps.StructArrays]]
 deps = ["Adapt", "DataAPI", "StaticArrays", "Tables"]
-git-tree-sha1 = "d21f2c564b21a202f4677c0fba5b5ee431058544"
+git-tree-sha1 = "2ce41e0d042c60ecd131e9fb7154a3bfadbf50d3"
 uuid = "09ab397b-f2b6-538f-b94a-2f83cf4a842a"
-version = "0.6.4"
+version = "0.6.3"
 
 [[deps.TOML]]
 deps = ["Dates"]
@@ -1118,7 +1118,7 @@ version = "0.9.1+5"
 # ╠═7c75d286-f549-49aa-8a14-36315474d314
 # ╟─27d6b83b-cce4-4821-b89f-5e996a37a445
 # ╠═5d52aca1-df32-4cf4-a334-f2b9cf255a60
-# ╟─9b8106ca-5e69-4de1-b523-c77fbec4076d
+# ╠═9b8106ca-5e69-4de1-b523-c77fbec4076d
 # ╟─d532f991-33a2-4560-a510-1522df1bdfdc
 # ╠═ca578974-6695-4b5a-a14d-85faa04ac4a1
 # ╟─db870974-0ecb-43d8-b8e3-82671c09dd05
