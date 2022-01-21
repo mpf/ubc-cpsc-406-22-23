@@ -140,7 +140,7 @@ $$
 $$
 
 ```julia:ls-reg-noisy2
-finiteDiff(n) = (diagm(ones(n)) - diagm(+1 => ones(n-1)))[1:n-1]
+finiteDiff(n) = (diagm(ones(n)) - diagm(+1 => ones(n-1)))[1:n-1,:]
 finiteDiff(4)
 ```
 \show{ls-reg-noisy2}
