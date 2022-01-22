@@ -51,9 +51,7 @@ jobs:
 
             import PlutoSliderServer
             PlutoSliderServer.github_action("homework";
-               Export_cache_dir="pluto_state_cache",
-               Export_baked_notebookfile=false,
-               Export_baked_state=false);
+               Export_cache_dir="pluto_state_cache");
 
             using NodeJS; run(`$(npm_cmd()) install highlight.js@10.7`);
             using Franklin;
