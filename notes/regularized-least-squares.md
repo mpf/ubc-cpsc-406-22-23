@@ -75,6 +75,14 @@ necessarily also has full rank for any positive $\lambda$, which implies that th
 
 ## Example: Signal denoising
 
+\note{
+  This example uses the following packages:
+```julia:setup
+using LinearAlgebra
+using Plots
+```
+}
+
 Consider a noisy measurement
 
 $$
@@ -84,7 +92,6 @@ $$
 of a signal $x^\natural$, where the vector $w$ represents unknown noise. Here's a simple 1-dimensional noisy signal:
 
 ```julia:ls-reg-noisy1
-using LinearAlgebra, Plots
 n = 300
 t = LinRange(0, 4, n)
 x = @. sin(t) + t*cos(t)^2
@@ -139,25 +146,35 @@ $$
 (I + \lambda D\T D)x = b.
 $$
 
+The following function generates the required finite-difference matrix:
 ```julia:ls-reg-noisy2
-finiteDiff(n) = (diagm(ones(n)) - diagm(+1 => ones(n-1)))[1:n-1]
+finiteDiff(n) = diagm(0 => ones(n), +1 => -ones(n-1))[1:n-1,:]
+```
+
+Here's an example of a small finite-difference matrix:
+```julia:ls-reg-noisy2
 finiteDiff(4)
 ```
 \show{ls-reg-noisy2}
 
-```julia:ls-reg-makeD
-D = finiteDiff(n)
+This function creates [generator](https://docs.julialang.org/en/v1/manual/arrays/#Generator-Expressions), which produces $n$ logarithmically-spaced numbers in the interval $[x_1,x_2]$:
+
+```julia:log-range
+LogRange(x1, x2, n) = (10^y for y in range(log10(x1), log10(x2), length=n))
 ```
 
+Now solve the regularized least-squares problem for several values of $\lambda\in[1,10^4]$:
 ```julia:ls-reg-noisy3
-λ = 100
-plot(t, b, leg =:topleft, label="noisy data")
-b̂ = [ b; zeros(n-1)]
-for λ in LinRange(100,5000,5) 
+D = finiteDiff(n)
+b̂ = [b; zeros(n-1)]
+plot(t, b, w=1, leg =:topleft, label="noisy data")
+for λ in LogRange(1e0, 1e4, 3) 
     Â = [ I; √λ*D ]
     xLS = Â \ b̂
-    plot!(t, xLS, label="λ = $(λ)")
+    plot!(t, xLS, w=2, label="regularized solution: λ = $(λ)")
 end
 savefig(joinpath(@OUTPUT,"ls-reg-noisy3")) # hide
 ```
+Note that the expression `Â = [ I; √λ*D ]` contains the [UniformScaling](https://docs.julialang.org/en/v1/stdlib/LinearAlgebra/#LinearAlgebra.UniformScaling-Tuple{Integer}) object, which represents an identity matrix of any size.
+
 \fig{ls-reg-noisy3}
