@@ -157,7 +157,7 @@ finiteDiff(4)
 ```
 \show{ls-reg-noisy2}
 
-This function creates [generator](https://docs.julialang.org/en/v1/manual/arrays/#Generator-Expressions), which produces $n$ logarithmically-spaced numbers in the interval $[x_1,x_2]$:
+The function below returns a [generator](https://docs.julialang.org/en/v1/manual/arrays/#Generator-Expressions), which produces $n$ logarithmically-spaced numbers in the interval $[x_1,x_2]$:
 
 ```julia:log-range
 LogRange(x1, x2, n) = (10^y for y in range(log10(x1), log10(x2), length=n))

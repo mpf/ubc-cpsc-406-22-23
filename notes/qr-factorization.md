@@ -2,9 +2,20 @@
 
 \blurb{The QR factorization of a matrix constructs an orthgonal basis for its columnspace. It's also one of the best computational tools for solving least-squares problems.}
 
+```!
+# hideall
+import Random; Random.seed!(1234);
+```
+
 ### Required Reading
 
 - [Orthogonal projection](https://ubcmath.github.io/MATH307/orthogonality/projection.html) and [QR decomposition](https://ubcmath.github.io/MATH307/orthogonality/qr.html) of UBC Math 307 [lecture notes](https://ubcmath.github.io/MATH307)
+
+\note{This page uses the `LinearAlgebra` package, which contains `norm` and `qr`.
+```!
+using LinearAlgebra
+```
+}
 
 ## Orthogonal and orthonormal vectors
 
@@ -28,14 +39,12 @@ These definitions extend readily to a collection of vectors: the set of $k$ vect
 \end{equation*}
 
 The 2-dimensional canonical unit vectors $e_1 = (1,0)$ and $e_2 = (0,1)$ are orthonormal:
-```julia:qr
-using LinearAlgebra
+```!
 e₁ = [1, 0];  e₂ = [0, 1]
 @show e₁'e₂
 @show norm(e₁)
 @show norm(e₂)
 ```
-\show{qr}
 
 ## Orthogonal matrices
 
@@ -123,19 +132,16 @@ where the triangular submatrix $R_1 = R[1{:}n,1{:}n]$ has no zeros on its diagon
 
 In Julia, we can compute the full QR decomposition of a matrix using via
 
-```julia:./code/qr
-using LinearAlgebra # gives `qr`
+```!
 m, n = 4, 3
 A = randn(m,n)
 Q, R = qr(A)
 ```
-\show{./code/qr}
 and we can verify the orthogonality of `Q`:
-```julia:./code/qr
+```!
 @show norm(Q'*Q - I)
 @show norm(Q*Q' - I)
 ```
-\show{./code/qr}
 
 Julia [stores](https://docs.julialang.org/en/v1/stdlib/LinearAlgebra/#LinearAlgebra.QRCompactWY) the factor `Q` as a series of [Householder reflectors](https://en.wikipedia.org/wiki/Householder_transformation#QR_decomposition).
 
@@ -143,7 +149,7 @@ Julia [stores](https://docs.julialang.org/en/v1/stdlib/LinearAlgebra/#LinearAlge
 
 To extract the "thin" QR factorization from `qr`, use the `Matrix` conversion function:
 
-```julia:./code/qr
+```!
 F = qr(A)
 Q₁ = Matrix(F.Q)
 R₁ = F.R
@@ -151,7 +157,6 @@ R₁ = F.R
 @show size(R₁)
 @show norm(A - Q₁*R₁)
 ```
-\show{./code/qr}
 
 ## Solving least squares via QR
 
@@ -188,28 +193,27 @@ The procedure for solving least-squares problems via the QR factorization can th
 
 Here's a simple random example in Julia:
 
-```julia:./code/qr-ls
+```!
 m, n = 4, 3
 A = randn(m, n)
 b = randn(m)
 F = qr(A)
 Q₁, R₁ = Matrix(F.Q), F.R
-x = R₁ \ Q₁'b # do NOT use x = inv(R₁)*Q₁'b
+x = R₁ \ Q₁'b   # <--- do NOT be tempted to use x = inv(R₁)*Q₁'b
+; # hide
 ```
 and we can verify that `x` is the least-squares solution by verifying that the residual $r=b-Ax$ is orthogonal to the columns of $A$: 
-```julia:./code/qr-ls
+```!
 r = b - A*x
 @show norm(A'r)
 ```
-\show{./code/qr-ls}
 
 The last line of the derivation shown in \eqref{eq:ls-derivation} asserts that the norm of the residual is equal to the norm of $Q_2^T b$. Let's check:
 
-```julia:./code/qr-ls
+```!
 Q₂ = F.Q[:,n+1:end]
 norm(Q₂'b) ≈ norm(r)
 ```
-\show{./code/qr-ls}
 
 ## QR versus the normal equations
 
@@ -221,7 +225,7 @@ This approach, however, can in some cases suffer from numerical instability, whi
 
 The [Pythagorean identity](https://en.wikipedia.org/wiki/Pythagorean_trigonometric_identity) asserts that
 \begin{equation*}
-\sin^2(θ) + cos^2(θ) = 1
+\sin^2(θ) + \cos^2(θ) = 1
 \end{equation*}
 for all values of $\theta$. This implies that the matrix
 \begin{equation*}
@@ -232,57 +236,53 @@ A = \bmat{
 },
 \end{equation*}
 for any values $\theta_1,\ldots,\theta_m$, doesn't have full column rank. Let's define a slightly perturbed version of this matrix that does have full column rank:
-```julia:qr-normal
+```!
 θ = LinRange(0,3,400)
 ε = 1e-7
 A = @. [sin(θ)^2   cos(θ+ε)^2   θ^0]
+; #hide
 ```
 We can check that this matrix has full column rank:
-```julia:qr-normal-2
-rank(A)
+```!
+rank(A) == 3
 ```
-\show{qr-normal-2}
 
 Now create a right-hand side that corresponds to a known solution `xᵉ`:
-```julia:qr-normal-3
+```!
 xᵉ = [1., 2., 1.]
 b  = A*xᵉ 
+; #hide
 ```
 
 ### Solution via the normal equations
 
 Here's the solution obtained via the normal equations, and its corresponding relative error:
-```julia:qr-normal-4
+```!
 xⁿ = A'A \ A'b
 eⁿ = norm(xᵉ - xⁿ) / norm(xᵉ)
 @show xⁿ
 @show eⁿ
 ```
-\show{qr-normal-4}
 This solution has only about 1 digit of accuracy.
 
 ### Solution via QR factorization
 
 Here's the solution obtained via the QR factorization, and its corresponding relative error:
-```julia:qr-normal-5
+```!
 Q, R = qr(A); Q = Matrix(Q)
 xʳ = R \ (Q'b)
 eʳ = norm(xᵉ - xʳ) / norm(xᵉ)
 @show xʳ
 @show eʳ
 ```
-\show{qr-normal-5}
 
 Clearly, this solution is much more accurate than that obtained via the normal equations. The cost is essentially the same, so there's no real downside to using QR. In general, we can use QR implicitly via the backslash operator, which organizes its computations in a slightly different way, and obtains even better accuracy:
-```julia:qr-normal-6
+```!
 xᵇ = A \ b
 eᵇ = norm(xᵉ - xᵇ) / norm(xᵉ)
 @show xᵇ
 @show eᵇ
 ```
-\show{qr-normal-6}
-
-
 
 
 [^1]: See section 5.2 of Golub and Van Loan, _Matrix Computations_ (4th ed.), 2013.

@@ -610,6 +610,9 @@ td {
   padding-left: 20%;
 }
 
+.franklin-content h1 > a {white-space: normal;}
+.franklin-content h2 > a {white-space: normal;}
+.franklin-content h3 > a {white-space: normal;}
 
 /* ==================================================================
     KATEX
