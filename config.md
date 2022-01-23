@@ -35,9 +35,8 @@ website_url   = "https://friedlander.io/ubc-cpsc-406"
 \newcommand{\note}[1]{@@note @@title ⚠ Note@@ @@content #1 @@ @@}
 \newcommand{\notation}[1]{@@note @@title Notation @@ @@content #1 @@ @@}
 \newcommand{\warn}[1]{@@warning @@title ⚠ Warning!@@ @@content #1 @@ @@}
-\newcommand{\theorem}[2]{ @@theorem **Theorem**: (_!#1_) #2 @@ }
-\newcommand{\definition}[2]{ @@definition **Definition**: (_!#1_) #2 @@ }
-\newcommand{\theorem}[2]{ @@theorem **Theorem**: (_!#1_) #2 @@ }
+\newcommand{\theorem}[2]{ @@theorem **Theorem**: (**!#1**) #2 @@ }
+\newcommand{\definition}[2]{ @@definition **Definition**: (**!#1**) #2 @@ }
 \newcommand{\algorithm}[2]{ @@theorem **Algorithm**: (_!#1_) #2 @@ }
 <!--
 Add here global latex commands to use throughout your pages.
