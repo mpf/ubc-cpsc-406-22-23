@@ -215,7 +215,7 @@ Q₂ = F.Q[:,n+1:end]
 norm(Q₂'b) ≈ norm(r)
 ```
 
-## QR versus the normal equations
+## Accuracy of QR versus normal equations
 
 A solution $x^*$ of a full-rank least-squares problem \eqref{eq:least-squares} can be obtained as the solution of the normal equations:
 \begin{equation*}
@@ -229,7 +229,7 @@ The [Pythagorean identity](https://en.wikipedia.org/wiki/Pythagorean_trigonometr
 \end{equation*}
 for all values of $\theta$. This implies that the matrix
 \begin{equation*}
-A = \bmat{
+  \bmat{
       \sin^2(\theta_1) & \cos^2(\theta_1) & 1
     \\ \vdots          & \vdots           & \vdots
     \\\sin^2(\theta_m) & \cos^2(\theta_m) & 1
