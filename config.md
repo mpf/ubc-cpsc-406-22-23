@@ -44,6 +44,7 @@ Add here global latex commands to use throughout your pages.
 \newcommand{\half}{\tfrac12}
 \newcommand{\T}{^T\!}
 \newcommand{\R}{\mathbb R}
+\newcommand{\Rn}{\R^n}
 \newcommand{\ip}[1]{\langle #1 \rangle}
 \newcommand{\minim}{\mathop{\hbox{\rm minimize}}}
 \newcommand{\maxim}{\mathop{\hbox{\rm maximize}}}

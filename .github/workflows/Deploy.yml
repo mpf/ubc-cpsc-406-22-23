@@ -46,7 +46,7 @@ jobs:
     #   The last line should be `optimize()` though you may want to give it
     #   specific arguments, see the documentation or ?optimize in the REPL.
     - run: |
-        julia -e '
+        julia --color=yes -e '
             using Pkg; Pkg.activate("."); Pkg.instantiate();
 
             import PlutoSliderServer
@@ -58,7 +58,12 @@ jobs:
             using Franklin;
             optimize(prepath="/ubc-cpsc-406/", minify=false)
             '
-
+      env: 
+          # Allows the use of unicode characters in Plots.jl
+          GKS_ENCODING: "utf8"
+          # Fixes 'GKS: can't connect to GKS socket application' errors
+          # and quality of output plots in GR back end.
+          GKSwstype: "100"
     - name: Build and Deploy
       if: ${{ !env.ACT }}
       uses: JamesIves/github-pages-deploy-action@releases/v3
@@ -66,3 +71,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
         FOLDER: __site
+        clean: true
+        single-commit: true
+

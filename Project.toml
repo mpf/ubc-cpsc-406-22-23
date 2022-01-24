@@ -2,6 +2,7 @@
 CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
 DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
 DataFramesMeta = "1313f7d8-7da2-5740-9ea0-a2ca25f37964"
+ForwardDiff = "f6369f11-7733-5829-9624-2563aa707210"
 Franklin = "713c75ef-9fc9-4b05-94a9-213340da978e"
 GLM = "38e38edf-8417-5370-95a0-9cbb8c7f171a"
 NodeJS = "2bd173c7-0d6d-553b-b6af-13a54713934c"
