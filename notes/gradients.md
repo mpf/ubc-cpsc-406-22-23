@@ -113,7 +113,7 @@ We derive calculus rules for linear and quadratic functions, which appear often 
 
  Let $a\in\R^n$. The linear function
 \begin{equation*}
-  f(x) = aᵀ x = \sum_i^n a_i x_i
+  f(x) = a\T x = \sum_i^n a_i x_i
 \end{equation*}
 has the gradient $\nabla f(x) = a$, and so the gradient is constant. Here's a small example:
 ```!
@@ -125,22 +125,22 @@ ForwardDiff.gradient(x->a'x, rand(5))
 
  Let $A\in\R^{n\times n}$ be a square matrix. Consider the quadratic function
 \begin{equation}\label{eq:quadratic-fn}
-  f(x) = \half xᵀ A x.
+  f(x) = \half x\T A x.
 \end{equation}
 One way to derive the gradient of this function is to write out the quadratic function making explicit all of the coefficients in $A$. Here's another approach that uses the product rule:
 \begin{align*}
-    ∇f(x) = \half ∇(xᵀa) + \half ∇(bᵀx),
+    ∇f(x) = \half ∇(x\T a) + \half ∇(b\T x),
 \end{align*}
-where $a = Ax$ and $b:=Aᵀx$ are held fixed when applying the gradient. Because each of the functions in the right-hand side of this sum is a linear function, we can apply the calculus rule for linear functions to deduce that
+where $a = Ax$ and $b:=A\T x$ are held fixed when applying the gradient. Because each of the functions in the right-hand side of this sum is a linear function, we can apply the calculus rule for linear functions to deduce that
 \begin{equation*}
-  ∇f(x) = \half Ax + \half Aᵀx = \half (A+Aᵀ)x.
+  ∇f(x) = \half Ax + \half A\T x = \half (A+A\T)x.
 \end{equation*}
-(Recall that $A$ is square.) The matrix $\half(A+Aᵀ)$ is the _symmetric part_ of $A$. If $A$ is symmetric, i.e., $A = Aᵀ$, then the gradient reduces to 
+(Recall that $A$ is square.) The matrix $\half(A+A\T)$ is the _symmetric part_ of $A$. If $A$ is symmetric, i.e., $A = A\T$, then the gradient reduces to 
 \begin{equation*}
   ∇f(x) = Ax.
 \end{equation*}
 
-But in optimization, we almost always assume that the matrix that defines the quadratic in \eqref{eq:quadratic-fn} is symmetric because always $xᵀAx = \half xᵀ(A+Aᵀ)x$, and therefore we can instead work with the symmetric part of $A$.
+But in optimization, we almost always assume that the matrix that defines the quadratic in \eqref{eq:quadratic-fn} is symmetric because always $x\T Ax = \half x\T(A+A\T)x$, and therefore we can instead work with the symmetric part of $A$.
 
 **Example** (2-norm). Consider the two functions
 \begin{equation*}
@@ -148,7 +148,7 @@ f_1(x) = \norm{x}_2 \quad\text{and}\quad f_2(x) = \half\norm{x}_2^2.
 \end{equation*}
 The function $f_2$ is of the form \eqref{eq:quadratic-fn} with $A=I$, and so $\nabla f_2(x) = x$. Use the chain rule to obtain the gradient of the $f_1$:
 \begin{equation*}
-  \nabla f_1(x) = \nabla (xᵀx)^\half = \half (xᵀx)^{-\half}\nabla (xᵀx) = \frac{x}{\norm{x}_2},
+  \nabla f_1(x) = \nabla (x\T x)^\half = \half (x\T x)^{-\half}\nabla (x\T x) = \frac{x}{\norm{x}_2},
 \end{equation*}
 which isn't differentiable at the origin.
 
@@ -160,7 +160,7 @@ Gradients can be understood geometrically in relation to the level-set of the fu
 \end{equation*}
 Fix any $x$ and consider the level set $[f≤f(x)]$. For any direction $d$ that's either a descent direction for $f$ or a tangent direction for $[f≤f(x)]$,
 \begin{equation*}
-   f'(x;d) = ∇f(x)ᵀd ≤ 0,
+   f'(x;d) = ∇f(x)\T d ≤ 0,
 \end{equation*}
 which implies that the gradient $\nabla f(x)$ is the outward normal to the level set.
 

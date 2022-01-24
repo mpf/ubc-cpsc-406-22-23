@@ -72,5 +72,5 @@ jobs:
         BRANCH: gh-pages
         FOLDER: __site
         clean: true
-        single-commit: true
+        single_commit: true
 
