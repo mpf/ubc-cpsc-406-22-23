@@ -9,11 +9,6 @@ using Random; Random.seed!(1234)
 \blurb{Gradients provide information on a function's sensitivity to perturbations in the input.}
 
 
-### Required Reading
-
-- [Section 1.5.1](https://doi.org/10.1137/1.9781611973655.ch3) of Beck
-- [Chapter 2](https://algorithmsbook.com/optimization/files/optimization.pdf) of Kochenderfer and Wheeler
-
 ## Directional derivatives
 
 The behavior of a function $f:\R^n\to\R$ along the ray $\{x+αd\mid α\in\R_+\}$, where $x$ and $d$ are $n$-vectors, is given by the univariate function

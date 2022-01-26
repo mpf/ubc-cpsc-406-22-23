@@ -7,6 +7,9 @@ This schedule corresponds to the semester January to April, 2022.
 | 1 | 10 Jan (Mon) | Introduction | [HW0](../homework/hw0) out | -->
 
 
+[BeckLink]: https://epubs.siam.org/doi/book/10.1137/1.9781611973655
+[KochenderferLink]: https://algorithmsbook.com/optimization/files/optimization.pdf
+
 Week 1
 
 - 10 Jan (Mon): Introduction 
@@ -21,14 +24,18 @@ Week 2
   - [HW1](../homework/hw1) out
 - 19 Jan (Wed): [Regularizated least-squares](regularized-least-squares) (continued)
 - 21 Jan (Fri): [Gradients](gradients)
-  - Required reading: Chapter 2 of [Algorithms for Optimization](https://algorithmsbook.com/optimization/files/optimization.pdf)
+  - [Section 1.5.1](https://doi.org/10.1137/1.9781611973655.ch3) of [Beck][BeckLink]
+  - Chapter 2 of [Kochenderfer and Wheeler][KochenderferLink]
 
 ----
 Week 3
 - 24 Jan (Mon): [Nonlinear least-squares](nonlinear-least-squares)
   - [HW1](../homework/hw1) due
+  - Sections [3.5](https://doi.org/10.1137/1.9781611973655.ch3) and [4.5](https://epubs.siam.org/doi/abs/10.1137/1.9781611973655.ch4) of [Beck][BeckLink]
 - 26 Jan (Wed): [Nonlinear least-squares](nonlinear-least-squares)
 - 28 Jan (Fri): Unconstrained optimization
+  - Required reading: Sections 4.1, 4.2, 4.4 of [Beck][BeckLink]
+
 
 ----
 Week 4

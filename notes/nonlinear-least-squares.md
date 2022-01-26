@@ -8,10 +8,6 @@ using Random; Random.seed!(12)
 
 \blurb{The nonlinear least-squares problem generalizes the linear least-squares problem to include nonlinear residual functions. The Gauss-Newton solves this problem as a sequence of least-squares subproblems.}
 
-### Required Reading
-
-- Sections [3.5](https://doi.org/10.1137/1.9781611973655.ch3) and [4.5](https://epubs.siam.org/doi/abs/10.1137/1.9781611973655.ch4) of [Beck](https://epubs.siam.org/doi/book/10.1137/1.9781611973655)
-
 
 ## Nonlinear residuals
 
@@ -65,8 +61,8 @@ function gauss_newton(r, J, x; ε=1e-4, maxits=30)
 	err = []
 	for i = 1:maxits
         rk, Jk = r(x), J(x)
-		push!(err, norm(Jk'rk))
-		err[end] ≤ ε && break
+	    push!(err, norm(Jk'rk))
+	    err[end] ≤ ε && break
         x = x - Jk\rk 
     end
     return x, err
