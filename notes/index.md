@@ -25,17 +25,17 @@ Week 2
 
 ----
 Week 3
-- 24 Jan (Mon): Nonlinear least-squares
+- 24 Jan (Mon): [Nonlinear least-squares](nonlinear-least-squares)
   - [HW1](../homework/hw1) due
-- 26 Jan (Wed): Unconstrained optimization
-- 28 Jan (Fri): Descent methods
+- 26 Jan (Wed): [Nonlinear least-squares](nonlinear-least-squares)
+- 28 Jan (Fri): Unconstrained optimization
 
 ----
 Week 4
 
-- 31 Jan (Mon): Quadratic problems
--  2 Feb (Wed): Cholesky factorization
--  4 Feb (Fri): Newton's method
+- 31 Jan (Mon): Descent methods
+-  2 Feb (Wed): Quadratic problems
+-  4 Feb (Fri): Newton's method and Cholesky factorizatio
 
 ----
 Week 5

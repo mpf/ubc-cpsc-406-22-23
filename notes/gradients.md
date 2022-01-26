@@ -1,3 +1,4 @@
+<!-- @def reeval=true -->
 # Gradients
 
 ```julia:setup
@@ -119,6 +120,7 @@ has the gradient $\nabla f(x) = a$, and so the gradient is constant. Here's a sm
 ```!
 a = collect(1:5)
 ForwardDiff.gradient(x->a'x, rand(5))
+; #hide
 ```
 
 ### Quadratic functions
