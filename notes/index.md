@@ -35,6 +35,7 @@ Week 3
 - 26 Jan (Wed): [Nonlinear least-squares](nonlinear-least-squares)
 - 28 Jan (Fri): Unconstrained optimization
   - Required reading: Sections 4.1, 4.2, 4.4 of [Beck][BeckLink]
+  - [HW2](../homework/hw2) out
 
 
 ----
@@ -42,7 +43,8 @@ Week 4
 
 - 31 Jan (Mon): Descent methods
 -  2 Feb (Wed): Quadratic problems
--  4 Feb (Fri): Newton's method and Cholesky factorizatio
+-  4 Feb (Fri): Newton's method and Cholesky factorization
+   -  [HW2](../homework/hw2) due
 
 ----
 Week 5

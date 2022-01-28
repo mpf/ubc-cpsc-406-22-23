@@ -7,7 +7,7 @@ using InteractiveUtils
 # ╔═╡ c5054d49-06cb-4682-b070-71c3a397077f
 md"""# Homework 2
 !!! deadline
-    Friday, 4 January, 11:59pm
+    Friday, 4 February, 11:59pm
 """
 
 # ╔═╡ fe59b1e5-a4b2-45b1-91a8-c3e5fde92f5c
