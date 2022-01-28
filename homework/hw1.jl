@@ -1250,9 +1250,9 @@ version = "1.6.38+0"
 
 [[deps.libvorbis_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Ogg_jll", "Pkg"]
-git-tree-sha1 = "c45f4e40e7aafe9d086379e5578947ec8b95a8fb"
+git-tree-sha1 = "b910cb81ef3fe6e78bf6acee440bda86fd6ae00c"
 uuid = "f27f6e37-5d2b-51aa-960f-b287f2bc3b7a"
-version = "1.3.7+0"
+version = "1.3.7+1"
 
 [[deps.nghttp2_jll]]
 deps = ["Artifacts", "Libdl"]
@@ -1283,7 +1283,7 @@ version = "0.9.1+5"
 
 # ╔═╡ Cell order:
 # ╟─4ef808f0-13fc-44a8-acdf-f01e0c7b5a10
-# ╟─ad9518bb-471d-48f9-abc1-3e3ecac3bf0c
+# ╠═ad9518bb-471d-48f9-abc1-3e3ecac3bf0c
 # ╠═f93a3136-7812-11ec-2c52-e30ce2ff34ca
 # ╟─38ee44b9-4642-4a5f-a581-2ce5e8187875
 # ╟─011a67fe-f829-42b9-bc26-54db0d3905c1
