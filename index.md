@@ -21,8 +21,8 @@ CPSC 406 ∙ [Department of Computer Science](https://www.cs.ubc.ca) ∙ [UBC](h
     * Office hours: Mondays 3-4 pm (see [Piazza][PiazzaLink] for Zoom link)
     
 * Teaching Assistants:
-  * Curtis Fox, office hours: Wednesday 12pm-1pm
-  * Naomi Graham, office hours: Wednesday 11pm-12pm
+  * Curtis Fox, office hours: Tuesday 4pm-5pm
+  * Naomi Graham, office hours: Wednesday 11am-12pm
   * Hamed Shirzad, office hours: Thursday 3:30pm-4:30pm
 
 
