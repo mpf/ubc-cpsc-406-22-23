@@ -54,6 +54,10 @@ jobs:
                Export_cache_dir="pluto_state_cache",
                Export_create_index=false);
 
+            PlutoSliderServer.github_action("notes";
+               Export_cache_dir="pluto_state_cache",
+               Export_create_index=false);
+
             using NodeJS; run(`$(npm_cmd()) install highlight.js@10.7`);
             using Franklin;
             optimize(prepath="/ubc-cpsc-406/", minify=false)

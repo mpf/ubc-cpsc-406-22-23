@@ -42,6 +42,7 @@ Week 3
 Week 4
 
 - 31 Jan (Mon): Descent methods
+  - [slides](/notes/gradient-descent.pdf), [demo](/notes/gradient-descent)
 -  2 Feb (Wed): Quadratic problems
 -  4 Feb (Fri): Newton's method and Cholesky factorization
    -  [HW2](../homework/hw2) due
