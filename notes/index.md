@@ -43,15 +43,16 @@ Week 4
 
 - 31 Jan (Mon): Descent methods
   - [slides](/notes/gradient-descent.pdf), [demo](/notes/gradient-descent)
--  2 Feb (Wed): [Scaled descent and Newton's method](/notes/scaled-and-newton-descent.pdf)
--  4 Feb (Fri): Newton's method and Cholesky factorization
+-  2 Feb (Wed): [Steepest descent](/notes/scaled-and-newton-descent.pdf)
+-  4 Feb (Fri): [Scaled descent]
    -  [HW2](../homework/hw2) due
 
 ----
 Week 5
 
 
--  7 Feb (Mon): Quasi-Newton methods
+-  7 Feb (Mon): Newton's method and Cholesky factorization
+   -  Chapter 5 of [Beck][BeckLink]
 -  9 Feb (Wed): Linearly-constrained problems
 - 11 Feb (Fri): Convex functions
 
