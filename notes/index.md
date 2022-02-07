@@ -44,7 +44,7 @@ Week 4
 - 31 Jan (Mon): Descent methods
   - [slides](/notes/gradient-descent.pdf), [demo](/notes/gradient-descent)
 -  2 Feb (Wed): [Steepest descent](/notes/scaled-and-newton-descent.pdf)
--  4 Feb (Fri): [Scaled descent]
+-  4 Feb (Fri): Scaled descent
    -  [HW2](../homework/hw2) due
 
 ----
