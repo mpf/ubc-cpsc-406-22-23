@@ -11,7 +11,8 @@ CPSC 406 ∙ [Department of Computer Science](https://www.cs.ubc.ca) ∙ [UBC](h
 [PiazzaLink]: http://piazza.com/ubc.ca/winterterm22021/cpsc406/home
 
 - Mondays, Wednesdays, and Fridays, 2-3 pm
-- Online via Zoom until further notice (see [Piazza][PiazzaLink] for Zoom link)
+- DMP 100
+<!-- - Online via Zoom until further notice (see [Piazza][PiazzaLink] for Zoom link) -->
 
 <!-- - [Hugh Dempster Pavillion (DMP 110)](https://ssc.adm.ubc.ca/classroomservices/function/viewlocation?userEvent=ShowLocation&buildingID=DMP&roomID=110) -->
 
