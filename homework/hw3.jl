@@ -37,11 +37,11 @@ where, respectively, $a_{11}$ and $w$ are the top-left entry and the remaining f
 ```math
 \begin{align}
   A = \begin{bmatrix} \alpha & 0 \\ w/\alpha & I \end{bmatrix}
-      \begin{bmatrix} 1 & 0 \\ 0 & K-ww^*/a_{11} \end{bmatrix}
-      \begin{bmatrix} \alpha & w^T/\alpha \\ 0 & I \end{bmatrix} = R_1^TAR_1,
+      \begin{bmatrix} 1 & 0 \\ 0 & K-ww^T/a_{11} \end{bmatrix}
+      \begin{bmatrix} \alpha & w^T/\alpha \\ 0 & I \end{bmatrix} = R_1^TA_1R_1,
 \end{align}
 ```
-where $\alpha:=\sqrt{a_{11}}$.
+where $\alpha:=\sqrt{a_{11}}$, and $R_1$ and $A_1$ are defined by the matrices in the factorization.
 1. This first step is valid because $a_{11}$ is positive. Why?
 The next iterations of the factorization proceed inductively on the submatrix $K-ww^T/a_{11}$. But again, that's only possible if its first entry is positive.
 2. Prove that this must be the case.
