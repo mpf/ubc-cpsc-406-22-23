@@ -52,7 +52,8 @@ Week 5
 
 
 -  7 Feb (Mon): Newton's method and Cholesky factorization
-   -  Chapter 5 of [Beck][BeckLink]
+   - Chapter 5 of [Beck][BeckLink]
+   - [HW3](../homework/hw3) out
 -  9 Feb (Wed): Linearly-constrained problems
 - 11 Feb (Fri): Convex functions
 
@@ -61,6 +62,7 @@ Week 6
 
 
 - 14 Feb (Mon): Convex sets
+   - [HW3])(../homework/hw3) due
 - 16 Feb (Wed): Projected gradient method
 - 18 Feb (Fri): Midterm exam
 
