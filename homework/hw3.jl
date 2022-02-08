@@ -23,7 +23,7 @@ md"""
 
 # ╔═╡ f9527e44-3eed-42c4-8be5-47254955d498
 md"""
-## Q1. Implement Newton's method and variants (Beck, Exercise 5.3)
+## Q1. Implement Newton's method and variants (Beck, Exercise 5.2)
 """
 
 # ╔═╡ 99df8118-7c73-11ec-201b-c75cb0f58794
