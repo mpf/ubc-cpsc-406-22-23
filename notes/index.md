@@ -55,13 +55,15 @@ Week 5
    - Chapter 5 of [Beck][BeckLink]
    - [HW3](../homework/hw3) out
 -  9 Feb (Wed): Linearly-constrained problems
-- 11 Feb (Fri): Convex functions
+- 11 Feb (Fri): Convex sets
+  - Chapter 6 of [Beck][BeckLink]
 
 ----
 Week 6
 
 
-- 14 Feb (Mon): Convex sets
+- 14 Feb (Mon): Convex functions 
+   - Chapter 7 of [Beck][BeckLink]
    - [HW3])(../homework/hw3) due
 - 16 Feb (Wed): Projected gradient method
 - 18 Feb (Fri): Midterm exam
