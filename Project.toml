@@ -12,3 +12,6 @@ PlutoSliderServer = "2fc8631c-6f24-4c5b-bca7-cbb509c42db4"
 PyPlot = "d330b81b-6aea-500a-939a-2ce795aea3ee"
 RDatasets = "ce6b1742-4840-55fa-b093-852dadbb1d8b"
 StatsPlots = "f3b207a7-027a-5e70-b257-86293d7955fd"
+
+[compat]
+ForwardDiff = "0.10"
