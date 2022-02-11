@@ -64,13 +64,12 @@ Week 6
 
 - 14 Feb (Mon): Convex functions 
    - Chapter 7 of [Beck][BeckLink]
-   - [HW3])(../homework/hw3) due
+   - [HW3](../homework/hw3) due
 - 16 Feb (Wed): Projected gradient method
 - 18 Feb (Fri): Midterm exam
 
 ----
 Week 7
-
 
 - 21 Feb  Midterm break
 - 23 Feb  Midterm break
@@ -78,7 +77,6 @@ Week 7
 
 ----
 Week 8
-
 
 - 28 Feb (Mon): Coordinate descent
 -  2 Mar (Wed): Stochastic gradient descent
