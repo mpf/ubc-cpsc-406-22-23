@@ -146,13 +146,13 @@ The equivalence of the three properties is then straightforward, and it's suffic
   b - y = z_n + z_r, \quad z_r\in\range(A), \quad z_n\in\Null(A\T).
 \end{equation*}
 
-If $y$ was _not_ the orthogonal projection of $b$, then there must exist some component of $b-y$ in the nullspace of $A\T$. Thus, $z_n\ne0$ and
+If $y$ was _not_ the orthogonal projection of $b$, then there must exist some component of $b-y$ in the range of $A$. Thus, $z_r\ne0$ and
 
 \begin{align*}
   \|r\|^2 &= \|b-y\|^2
 \\        &= \|z_n+z_r\|^2
 \\        &= \|z_n\|^2+\|z_r\|^2
-\\        &> \|z_r\|^2=\|b-(y+z_r)\|^2,
+\\        &> \|z_n\|^2=\|b-(y+z_r)\|^2,
 \end{align*}
 
 which means we found a new point $(y+z_r)\in\range(A)$ with a smaller residual, which contradicts the optimality of $x\LS$, and also the uniqueness of the projection $y$.
