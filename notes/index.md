@@ -22,7 +22,7 @@ This schedule corresponds to the semester January to April, 2022.
 | Mon, February 7th | Newton's method and Cholesky factorization | Chapter 5 of [Beck][BeckLink] | [HW3](../homework/hw3) out |
 | Wed, February 9th | [Linearly-constrained problems](/notes/linear-constraints.pdf) | -- | -- | 
 | Fri, February 11th | Reduced-gradient method | -- | -- |
-| Mon, February 14th | Convex sets |  Chapter 6 of [Beck][BeckLink]| [HW3](../homework/hw3) due |
+| Mon, February 14th | [Convex sets](/notes/convex-sets.pdf) |  Chapter 6 of [Beck][BeckLink]| [HW3](../homework/hw3) due |
 | Wed, February 16th | Convex functions | Chapter 7 of [Beck][BeckLink] | -- | 
 | Fri, February 18th | Midterm exam | -- | -- |
 | Mon, February 28th | Projected gradient method | -- | -- |
