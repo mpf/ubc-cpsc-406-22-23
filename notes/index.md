@@ -23,12 +23,12 @@ This schedule corresponds to the semester January to April, 2022.
 | Wed, February 9th | [Linearly-constrained problems](/notes/linear-constraints.pdf) | -- | -- | 
 | Fri, February 11th | Reduced-gradient method | -- | -- |
 | Mon, February 14th | [Convex sets](/notes/convex-sets.pdf) |  Chapter 6 of [Beck][BeckLink]| [HW3](../homework/hw3) due |
-| Wed, February 16th | Convex functions | Chapter 7 of [Beck][BeckLink] | -- | 
+| Wed, February 16th | Convex sets |  | -- | 
 | Fri, February 18th | Midterm exam | -- | -- |
-| Mon, February 28th | Projected gradient method | -- | -- |
-| Wed, March 2nd | Coordinate descent | -- | -- |
-| Fri, March 4th | Stochastic gradient descent | -- | -- |
-| Mon, March 7th | TBD | -- | -- |
+| Mon, February 28th | [Convex functions](/notes/convex-functions.pdf) | Chapter 7 of [Beck][BeckLink] | -- |
+| Wed, March 2nd | Convex functions | -- | -- |
+| Fri, March 4th | Coordinate descent | -- | -- |
+| Mon, March 7th | Stochastic gradient descent | -- | -- |
 | Wed, March 9th | TBD | -- | -- |
 | Fri, March 11th | TBD | -- | -- |
 | Mon, March 14th | TBD | -- | -- |
