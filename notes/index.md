@@ -26,9 +26,9 @@ This schedule corresponds to the semester January to April, 2022.
 | Wed, February 16th | Convex sets |  | -- |
 | Fri, February 18th | Midterm exam | -- | -- |
 | Mon, February 28th | [Convex functions](/notes/convex-functions.pdf) | Chapter 7 of [Beck][BeckLink] | -- |
-| Wed, March 2nd | Convex functions | -- | [HW4](../homework/hw4.pdf) out |
-| Fri, March 4th | Coordinate descent | -- | -- |
-| Mon, March 7th | Stochastic gradient descent | -- | -- |
+| Wed, March 2nd | [Convex optimality](/notes/normal-cone-optimality.pdf) | -- | [HW4](../homework/hw4.pdf) out |
+| Fri, March 4th | Projected gradient | -- | -- |
+| Mon, March 7th | TBD | -- | -- |
 | Wed, March 9th | TBD | -- | [HW4](../homework/hw4.pdf) in |
 | Fri, March 11th | TBD | -- | -- |
 | Mon, March 14th | TBD | -- | -- |
