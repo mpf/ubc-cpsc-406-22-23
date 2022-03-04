@@ -27,7 +27,7 @@ This schedule corresponds to the semester January to April, 2022.
 | Fri, February 18th | Midterm exam | -- | -- |
 | Mon, February 28th | [Convex functions](/notes/convex-functions.pdf) | Chapter 7 of [Beck][BeckLink] | -- |
 | Wed, March 2nd | [Convex optimality](/notes/normal-cone-optimality.pdf) | -- | [HW4](../homework/hw4.pdf) out |
-| Fri, March 4th | Projected gradient | -- | [solution to HWq2] (../homework/hw3q2.jl) out |
+| Fri, March 4th | Projected gradient | -- | [solution to HW3 q2] (../homework/hw3q2.jl) out |
 | Mon, March 7th | TBD | -- | -- |
 | Wed, March 9th | TBD | -- | [HW4](../homework/hw4.pdf) in |
 | Fri, March 11th | TBD | -- | -- |
