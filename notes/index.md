@@ -28,7 +28,7 @@ This schedule corresponds to the semester January to April, 2022.
 | Mon, February 28th | [Convex functions](/notes/convex-functions.pdf) | Chapter 7 of [Beck][BeckLink] | -- |
 | Wed, March 2nd | [Convex optimality](/notes/normal-cone-optimality.pdf) | -- | [HW4](../homework/hw4.pdf) out |
 | Fri, March 4th | [Projected gradient](/notes/projection.pdf) | -- | [solution to HW3 q2] (../homework/hw3q2.jl) out |
-| Mon, March 7th | TBD | -- | -- |
+| Mon, March 7th | [Convergence gradient descent](/ubc-cpsc-406/notes/convergence-gradient-descent.pdf) | -- | -- |
 | Wed, March 9th | TBD | -- | [HW4](../homework/hw4.pdf) in |
 | Fri, March 11th | TBD | -- | -- |
 | Mon, March 14th | TBD | -- | -- |
