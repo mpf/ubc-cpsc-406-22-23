@@ -29,8 +29,8 @@ This schedule corresponds to the semester January to April, 2022.
 | Wed, March 2nd | [Convex optimality](/notes/normal-cone-optimality.pdf) | -- | [HW4](../homework/hw4.pdf) out |
 | Fri, March 4th | [Projected gradient](/notes/projection.pdf) | -- | [solution to HW3 q2] (../homework/hw3q2.jl) out |
 | Mon, March 7th | [Convergence gradient descent](/notes/convergence-gradient-descent.pdf) | -- | -- |
-| Wed, March 9th | TBD | -- | [HW4](../homework/hw4.pdf) in |
-| Fri, March 11th | TBD | -- | -- |
+| Wed, March 9th | TBD | [Stochastic gradient descent](/notes/stochastic-gradient-descent.pdf) | -- | [HW4](../homework/hw4.pdf) in |
+| Fri, March 11th | TBD | [Linear programming intro](/notes/lin-prog-apps.pdf) | -- | -- |
 | Mon, March 14th | TBD | -- | -- |
 | Wed, March 16th | TBD | -- | -- |
 | Fri, March 18th | TBD | -- | -- |
