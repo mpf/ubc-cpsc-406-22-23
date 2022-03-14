@@ -31,7 +31,7 @@ This schedule corresponds to the semester January to April, 2022.
 | Mon, March 7th | [Convergence gradient descent](/notes/convergence-gradient-descent.pdf) | -- | -- |
 | Wed, March 9th | TBD | [Stochastic gradient descent](/notes/stochastic-gradient-descent.pdf) | -- | [HW4](../homework/hw4.pdf) in |
 | Fri, March 11th | TBD | [Linear programming intro](/notes/lin-prog-apps.pdf) | -- | -- |
-| Mon, March 14th | TBD | -- | -- |
+| Mon, March 14th | TBD | [Linear programming geometry](/notes/lp-geometry.pdf) |-- | -- |
 | Wed, March 16th | TBD | -- | -- |
 | Fri, March 18th | TBD | -- | -- |
 | Mon, March 21st | TBD | -- | -- |
