@@ -7,41 +7,40 @@ This schedule corresponds to the semester January to April, 2022.
 
 | Date     | Lecture Topic | Readings  | Homework |
 | :---:    |    :----   | ---: | :---: |
-| Mon, January 10th      | Introduction       | --  | [HW0](../homework/hw0) out |
-| Wed, January 12th   | [Linear least-squares](least-squares)   |    --   | -- |
-| Fri, January 14th | [QR Factorization](qr-factorization) | -- | [HW0](../homework/hw0) due |
-| Mon, January 17th | [Regularized least-squares](regularized-least-squares) | -- | [HW1](../homework/hw1) out|
-| Wed, January 19th | [Regularizated least-squares](regularized-least-squares) (continued) | -- | -- | 
-| Fri, January 21st | [Gradients](gradients) | [Section 1.5.1](https://doi.org/10.1137/1.9781611973655.ch3) of [Beck][BeckLink] and Chapter 2 of [Kochenderfer and Wheeler][KochenderferLink] | -- |
-| Mon, January 24th | [Nonlinear least-squares](nonlinear-least-squares) | Sections [3.5](https://doi.org/10.1137/1.9781611973655.ch3) and [4.5](https://epubs.siam.org/doi/abs/10.1137/1.9781611973655.ch4) of [Beck][BeckLink] | [HW1](../homework/hw1) due |
-| Wed, January 26th | [Nonlinear least-squares](nonlinear-least-squares) (continued) | -- | -- |
-| Fri, January 28th | Unconstrained optimization | Required reading: Sections 4.1, 4.2, 4.4 of [Beck][BeckLink] | [HW2](../homework/hw2) out | 
-| Mon, January 31st | [Descent methods](/notes/gradient-descent.pdf), [demo](/notes/gradient-descent) | -- | -- |
-| Wed, February 2nd | [Steepest descent](/notes/scaled-and-newton-descent.pdf) | -- | -- |
-| Fri, February 4th | Scaled descent | -- | [HW2](../homework/hw2) due |
-| Mon, February 7th | Newton's method and Cholesky factorization | Chapter 5 of [Beck][BeckLink] | [HW3](../homework/hw3) out |
-| Wed, February 9th | [Linearly-constrained problems](/notes/linear-constraints.pdf) | -- | -- | 
-| Fri, February 11th | Reduced-gradient method | -- | -- |
-| Mon, February 14th | [Convex sets](/notes/convex-sets.pdf) |  Chapter 6 of [Beck][BeckLink]| [HW3](../homework/hw3) due |
-| Wed, February 16th | Convex sets |  | -- |
-| Fri, February 18th | Midterm exam | -- | -- |
-| Mon, February 28th | [Convex functions](/notes/convex-functions.pdf) | Chapter 7 of [Beck][BeckLink] | -- |
-| Wed, March 2nd | [Convex optimality](/notes/normal-cone-optimality.pdf) | -- | [HW4](../homework/hw4.pdf) out |
-| Fri, March 4th | [Projected gradient](/notes/projection.pdf) | -- | [solution to HW3 q2] (../homework/hw3q2.jl) out |
-| Mon, March 7th | [Convergence gradient descent](/notes/convergence-gradient-descent.pdf) | -- | -- |
-| Wed, March 9th | TBD | [Stochastic gradient descent](/notes/stochastic-gradient-descent.pdf) | -- | [HW4](../homework/hw4.pdf) in |
-| Fri, March 11th | TBD | [Linear programming intro](/notes/lin-prog-apps.pdf) | -- | -- |
-| Mon, March 14th | TBD | [Linear programming geometry](/notes/lp-geometry.pdf) |-- | -- |
-| Wed, March 16th | TBD | -- | -- |
-| Fri, March 18th | TBD | -- | -- |
-| Mon, March 21st | TBD | -- | -- |
-| Wed, March 23rd | TBD | -- | -- |
-| Fri, March 25th | TBD | -- | -- |
-| Mon, March 28th | TBD | -- | -- |
-| Wed, March 30th | TBD | -- | -- |
-| Fri, April 1st | TBD | -- | -- | 
-| Mon, April 4th | TBD | -- | -- |
-| Wed, April 6th | TBD | -- | -- |
-| Fri, April 8th (last day of class) | TBD | -- | -- |
-| Week 14 | Final exam period | | |
-| Week 15 | Final exam period | | |
+| Mon, January 10 | Introduction       | --  | [HW0](../homework/hw0) out |
+| Wed, January 12 | [Linear least-squares](least-squares)   |    --   | -- |
+| Fri, January 14 | [QR Factorization](qr-factorization) | -- | [HW0](../homework/hw0) due |
+| Mon, January 17 | [Regularized least-squares](regularized-least-squares) | -- | [HW1](../homework/hw1) out|
+| Wed, January 19 | [Regularizated least-squares](regularized-least-squares) (continued) | -- | -- | 
+| Fri, January 21 | [Gradients](gradients) | [Section 1.5.1](https://doi.org/10.1137/1.9781611973655.ch3) of [Beck][BeckLink] and Chapter 2 of [Kochenderfer and Wheeler][KochenderferLink] | -- |
+| Mon, January 24 | [Nonlinear least-squares](nonlinear-least-squares) | Sections [3.5](https://doi.org/10.1137/1.9781611973655.ch3) and [4.5](https://epubs.siam.org/doi/abs/10.1137/1.9781611973655.ch4) of [Beck][BeckLink] | [HW1](../homework/hw1) due |
+| Wed, January 26 | [Nonlinear least-squares](nonlinear-least-squares) (continued) | -- | -- |
+| Fri, January 28 | Unconstrained optimization | Required reading: Sections 4.1, 4.2, 4.4 of [Beck][BeckLink] | [HW2](../homework/hw2) out | 
+| Mon, January 31 | [Descent methods](/notes/gradient-descent.pdf), [demo](/notes/gradient-descent) | -- | -- |
+| Wed, February 2 | [Steepest descent](/notes/scaled-and-newton-descent.pdf) | -- | -- |
+| Fri, February 4 | Scaled descent | -- | [HW2](../homework/hw2) due |
+| Mon, February 7 | Newton's method and Cholesky factorization | Chapter 5 of [Beck][BeckLink] | [HW3](../homework/hw3) out |
+| Wed, February 9 | [Linearly-constrained problems](/notes/linear-constraints.pdf) | -- | -- | 
+| Fri, February 11 | Reduced-gradient method | -- | -- |
+| Mon, February 14 | [Convex sets](/notes/convex-sets.pdf) |  Chapter 6 of [Beck][BeckLink]| [HW3](../homework/hw3) due |
+| Wed, February 16 | Convex sets |  | -- |
+| Fri, February 18 | Midterm exam | -- | -- |
+| Mon, February 28 | [Convex functions](/notes/convex-functions.pdf) | Chapter 7 of [Beck][BeckLink] | -- |
+| Wed, March 2 | [Convex optimality](/notes/normal-cone-optimality.pdf) | -- | [HW4](../homework/hw4.pdf) out |
+| Fri, March 4 | [Projected gradient](/notes/projection.pdf) | -- | [solution to HW3 q2] (../homework/hw3q2.jl) out |
+| Mon, March 7 | [Convergence gradient descent](/notes/convergence-gradient-descent.pdf) | -- | -- |
+| Wed, March 9 | TBD | [Stochastic gradient descent](/notes/stochastic-gradient-descent.pdf) | -- | [HW4](../homework/hw4.pdf) in |
+| Fri, March 11 | TBD | [Linear programming intro](/notes/lin-prog-apps.pdf) | -- | -- |
+| Mon, March 14 | TBD | [Linear programming geometry](/notes/lp-geometry.pdf) |-- | -- |
+| Wed, March 16 | TBD | -- | -- |
+| Fri, March 18 | TBD | -- | -- |
+| Mon, March 21 | TBD | -- | -- |
+| Wed, March 23 | TBD | -- | -- |
+| Fri, March 25 | TBD | -- | -- |
+| Mon, March 28 | TBD | -- | -- |
+| Wed, March 30 | TBD | -- | -- |
+| Fri, April 1 | TBD | -- | -- | 
+| Mon, April 4 | TBD | -- | -- |
+| Wed, April 6 | TBD | -- | -- |
+| Fri, April 8 (last day of class) | TBD | -- | -- |
+| Wed, April 20| Final exam, 8:30am | | |
