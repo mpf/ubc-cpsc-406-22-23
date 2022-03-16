@@ -29,9 +29,9 @@ This schedule corresponds to the semester January to April, 2022.
 | Wed, March 2 | [Convex optimality](/notes/normal-cone-optimality.pdf) | -- | [HW4](../homework/hw4.pdf) out |
 | Fri, March 4 | [Projected gradient](/notes/projection.pdf) | -- | [solution to HW3 q2] (../homework/hw3q2.jl) out |
 | Mon, March 7 | [Convergence gradient descent](/notes/convergence-gradient-descent.pdf) | -- | -- |
-| Wed, March 9 | TBD | [Stochastic gradient descent](/notes/stochastic-gradient-descent.pdf) | -- | [HW4](../homework/hw4.pdf) in |
-| Fri, March 11 | TBD | [Linear programming intro](/notes/lin-prog-apps.pdf) | -- | -- |
-| Mon, March 14 | TBD | [Linear programming geometry](/notes/lp-geometry.pdf) |-- | -- |
+| Wed, March 9 | [Stochastic gradient descent](/notes/stochastic-gradient-descent.pdf) | -- | [HW4](../homework/hw4.pdf) in |
+| Fri, March 11 | [Linear programming intro](/notes/lin-prog-apps.pdf) | -- | -- |
+| Mon, March 14 | [Linear programming geometry](/notes/lp-geometry.pdf) |-- | -- |
 | Wed, March 16 | TBD | -- | -- |
 | Fri, March 18 | TBD | -- | -- |
 | Mon, March 21 | TBD | -- | -- |
@@ -43,4 +43,4 @@ This schedule corresponds to the semester January to April, 2022.
 | Mon, April 4 | TBD | -- | -- |
 | Wed, April 6 | TBD | -- | -- |
 | Fri, April 8 (last day of class) | TBD | -- | -- |
-| Wed, April 20| Final exam, 8:30am | | |
+| Wed, April 20| Final exam, 8:**30am** | | |
