@@ -34,10 +34,10 @@ This schedule corresponds to the semester January to April, 2022.
 | Mon, March 14 | [Linear programming geometry](/notes/lp-geometry.pdf) |-- | -- |
 | Wed, March 16 | Linear programming geometry (cont'd) | -- | -- |
 | Fri, March 18 | [LP simplex](lp-simplex.pdf) | -- | -- |
-| Mon, March 21 | LP simplex (cont'd) | -- | -- |
+| Mon, March 21 | LP simplex (cont'd) | -- | [HW5](../homework/hw5.pdf) |
 | Wed, March 23 | TBD | -- | -- |
 | Fri, March 25 | TBD | -- | -- |
-| Mon, March 28 | TBD | -- | -- |
+| Mon, March 28 | TBD | -- | HW5 due |
 | Wed, March 30 | TBD | -- | -- |
 | Fri, April 1 | TBD | -- | -- | 
 | Mon, April 4 | TBD | -- | -- |
