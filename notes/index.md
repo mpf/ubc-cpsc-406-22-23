@@ -32,10 +32,10 @@ This schedule corresponds to the semester January to April, 2022.
 | Wed, March 9 | [Stochastic gradient descent](/notes/stochastic-gradient-descent.pdf) | -- | [HW4](../homework/hw4.pdf) in |
 | Fri, March 11 | [Linear programming intro](/notes/lin-prog-apps.pdf) | -- | -- |
 | Mon, March 14 | [Linear programming geometry](/notes/lp-geometry.pdf) |-- | -- |
-| Wed, March 16 | Linear programming geometry (cont'd) | -- | -- |
+| Wed, March 16 | [Linear programming standard form](/notes/lp-standard-form.pdf) | -- | -- |
 | Fri, March 18 | [LP simplex](lp-simplex.pdf) | -- | -- |
 | Mon, March 21 | LP simplex (cont'd) | -- | [HW5](../homework/hw5.pdf) |
-| Wed, March 23 | TBD | -- | -- |
+| Wed, March 23 | LP simplex example | -- | -- |
 | Fri, March 25 | TBD | -- | -- |
 | Mon, March 28 | TBD | -- | HW5 due |
 | Wed, March 30 | TBD | -- | -- |
