@@ -35,7 +35,7 @@ This schedule corresponds to the semester January to April, 2022.
 | Wed, March 16 | [Linear programming standard form](/notes/lp-standard-form.pdf) | -- | -- |
 | Fri, March 18 | [LP simplex](lp-simplex.pdf) | -- | -- |
 | Mon, March 21 | LP simplex (cont'd) | -- | [HW5](../homework/hw5.pdf) |
-| Wed, March 23 | LP simplex example | -- | -- |
+| Wed, March 23 | [LP simplex example](/notes/lp-simplex-example.pdf) | -- | -- |
 | Fri, March 25 | TBD | -- | -- |
 | Mon, March 28 | TBD | -- | HW5 due |
 | Wed, March 30 | TBD | -- | -- |
