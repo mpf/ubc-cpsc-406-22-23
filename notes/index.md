@@ -29,10 +29,10 @@ This schedule corresponds to the semester January to April, 2022.
 | Wed, March 2 | [Convex optimality](/notes/normal-cone-optimality.pdf) | -- | [HW4](../homework/hw4.pdf) out |
 | Fri, March 4 | [Projected gradient](/notes/projection.pdf) | -- | [solution to HW3 q2] (../homework/hw3q2.jl) out |
 | Mon, March 7 | [Convergence gradient descent](/notes/convergence-gradient-descent.pdf) | -- | -- |
-| Wed, March 9 | [Stochastic gradient descent](/notes/stochastic-gradient-descent.pdf) | -- | [HW4](../homework/hw4.pdf) in |
-| Fri, March 11 | [Linear programming intro](/notes/lin-prog-apps.pdf) | -- | -- |
-| Mon, March 14 | [Linear programming geometry](/notes/lp-geometry.pdf) |-- | -- |
-| Wed, March 16 | [Linear programming standard form](/notes/lp-standard-form.pdf) | -- | -- |
+| Wed, March 9 | [Stochastic gradient descent](/notes/stochastic-gradient-descent.pdf) | -- | [HW4](../homework/hw4.pdf) due |
+| Fri, March 11 | [LP intro](/notes/lin-prog-apps.pdf) | -- | -- |
+| Mon, March 14 | [LP geometry](/notes/lp-geometry.pdf) |-- | -- |
+| Wed, March 16 | [LP standard form](/notes/lp-standard-form.pdf) | -- | -- |
 | Fri, March 18 | [LP simplex](lp-simplex.pdf) | -- | -- |
 | Mon, March 21 | LP simplex (cont'd) | -- | [HW5](../homework/hw5.pdf) |
 | Wed, March 23 | [LP simplex example](/notes/lp-simplex-example.pdf) | -- | -- |
