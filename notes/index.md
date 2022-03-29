@@ -37,7 +37,7 @@ This schedule corresponds to the semester January to April, 2022.
 | Mon, March 21 | LP simplex (cont'd) | -- | [HW5](../homework/hw5.pdf) |
 | Wed, March 23 | [LP simplex example](/notes/lp-simplex-example.pdf) | -- | -- |
 | Fri, March 25 | [LP 2-sided bounds and phase 1](/notes/lp-simplex-bnds-2phase.pdf), [Demo](/notes/lp-jump) | -- | -- |
-| Mon, March 28 | [LP duality](/notes/lp-duality.pdf) | -- | HW5 due |
+| Mon, March 28 | [LP duality](/notes/lp-duality.pdf), [Demo](/notes/lp-duality) | -- | HW5 due |
 | Wed, March 30 | [LP & QP interior method](lp-qp-barrier.pdf) | -- | -- |
 | Fri, April 1 | TBD | -- | -- | 
 | Mon, April 4 | TBD | -- | -- |
