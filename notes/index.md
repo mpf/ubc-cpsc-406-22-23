@@ -30,14 +30,14 @@ This schedule corresponds to the semester January to April, 2022.
 | Fri, March 4 | [Projected gradient](/notes/projection.pdf) | -- | [solution to HW3 q2] (../homework/hw3q2.jl) out |
 | Mon, March 7 | [Convergence gradient descent](/notes/convergence-gradient-descent.pdf) | -- | -- |
 | Wed, March 9 | [Stochastic gradient descent](/notes/stochastic-gradient-descent.pdf) | -- | [HW4](../homework/hw4.pdf) due |
-| Fri, March 11 | [LP intro](/notes/lin-prog-apps.pdf) | -- | -- |
+| Fri, March 11 | [LP intro](/notes/lin-prog-apps.pdf) | Sections 6.4 and 8.2 of [Beck][BeckLink] | -- |
 | Mon, March 14 | [LP geometry](/notes/lp-geometry.pdf) |-- | -- |
 | Wed, March 16 | [LP standard form](/notes/lp-standard-form.pdf) | -- | -- |
 | Fri, March 18 | [LP simplex](lp-simplex.pdf) | -- | -- |
 | Mon, March 21 | LP simplex (cont'd) | -- | [HW5](../homework/hw5.pdf) |
 | Wed, March 23 | [LP simplex example](/notes/lp-simplex-example.pdf) | -- | -- |
 | Fri, March 25 | [LP 2-sided bounds and phase 1](/notes/lp-simplex-bnds-2phase.pdf), [Demo](/notes/lp-jump) | -- | -- |
-| Mon, March 28 | [LP duality](/notes/lp-duality.pdf), [Demo](/notes/lp-duality) | -- | HW5 due |
+| Mon, March 28 | [LP duality](/notes/lp-duality.pdf), [Demo](/notes/lp-duality) | Section 12.3.1 of [Beck][BeckLink] | HW5 due |
 | Wed, March 30 | [LP & QP interior method](lp-qp-barrier.pdf) | -- | -- |
 | Fri, April 1 | [Matrix games](/notes/lp-games.pdf) | -- | -- | 
 | Mon, April 4 | TBD | -- | -- |
