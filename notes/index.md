@@ -39,7 +39,7 @@ This schedule corresponds to the semester January to April, 2022.
 | Fri, March 25 | [LP 2-sided bounds and phase 1](/notes/lp-simplex-bnds-2phase.pdf), [Demo](/notes/lp-jump) | -- | -- |
 | Mon, March 28 | [LP duality](/notes/lp-duality.pdf), [Demo](/notes/lp-duality) | Section 12.3.1 of [Beck][BeckLink] | HW5 due |
 | Wed, March 30 | [LP & QP interior method](lp-qp-barrier.pdf) | -- | -- |
-| Fri, April 1 | [Matrix games](/notes/lp-games.pdf) | -- | -- | 
+| Fri, April 1 | [Matrix games](/notes/lp-games.pdf) | -- | [HW6](/homework/hw6.pdf) out (due Apr 11) | 
 | Mon, April 4 | TBD | -- | -- |
 | Wed, April 6 | TBD | -- | -- |
 | Fri, April 8 (last day of class) | TBD | -- | -- |
