@@ -40,7 +40,7 @@ This schedule corresponds to the semester January to April, 2022.
 | Mon, March 28 | [LP duality](/notes/lp-duality.pdf), [Demo](/notes/lp-duality) | Section 12.3.1 of [Beck][BeckLink] | HW5 due |
 | Wed, March 30 | [LP & QP interior method](lp-qp-barrier.pdf) | -- | -- |
 | Fri, April 1 | [Matrix games](/notes/lp-games.pdf) | -- | [HW6](/homework/hw6.pdf) out (due Apr 11) | 
-| Mon, April 4 | TBD | -- | -- |
+| Mon, April 4 | [Max-flow/Min-cut](/notes/max-flow-min-cut.pdf) | -- | -- |
 | Wed, April 6 | TBD | -- | -- |
 | Fri, April 8 (last day of class) | TBD | -- | -- |
 | Wed, April 20| Final exam, 8:**30am** | | |
