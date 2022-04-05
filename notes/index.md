@@ -1,129 +1,46 @@
+[BeckLink]: https://epubs.siam.org/doi/book/10.1137/1.9781611973655
+[KochenderferLink]: https://algorithmsbook.com/optimization/files/optimization.pdf
+
 # Schedule
 
 This schedule corresponds to the semester January to April, 2022.
 
-<!-- | week | date | notes | hw
-|---|---|---|---
-| 1 | 10 Jan (Mon) | Introduction | [HW0](../homework/hw0) out | -->
-
-
-[BeckLink]: https://epubs.siam.org/doi/book/10.1137/1.9781611973655
-[KochenderferLink]: https://algorithmsbook.com/optimization/files/optimization.pdf
-
-Week 1
-
-- 10 Jan (Mon): Introduction 
-  - [HW0](../homework/hw0) out
-- 12 Jan (Wed): [Linear least-squares](least-squares)
-- 14 Jan (Fri): [QR Factorization](qr-factorization)
-  - [HW0](../homework/hw0) due 
-----
-Week 2
-
-- 17 Jan (Mon): [Regularized least-squares](regularized-least-squares)
-  - [HW1](../homework/hw1) out
-- 19 Jan (Wed): [Regularizated least-squares](regularized-least-squares) (continued)
-- 21 Jan (Fri): [Gradients](gradients)
-  - [Section 1.5.1](https://doi.org/10.1137/1.9781611973655.ch3) of [Beck][BeckLink]
-  - Chapter 2 of [Kochenderfer and Wheeler][KochenderferLink]
-
-----
-Week 3
-- 24 Jan (Mon): [Nonlinear least-squares](nonlinear-least-squares)
-  - [HW1](../homework/hw1) due
-  - Sections [3.5](https://doi.org/10.1137/1.9781611973655.ch3) and [4.5](https://epubs.siam.org/doi/abs/10.1137/1.9781611973655.ch4) of [Beck][BeckLink]
-- 26 Jan (Wed): [Nonlinear least-squares](nonlinear-least-squares)
-- 28 Jan (Fri): Unconstrained optimization
-  - Required reading: Sections 4.1, 4.2, 4.4 of [Beck][BeckLink]
-  - [HW2](../homework/hw2) out
-
-
-----
-Week 4
-
-- 31 Jan (Mon): Descent methods
-  - [slides](/notes/gradient-descent.pdf), [demo](/notes/gradient-descent)
--  2 Feb (Wed): [Steepest descent](/notes/scaled-and-newton-descent.pdf)
--  4 Feb (Fri): Scaled descent
-   -  [HW2](../homework/hw2) due
-
-----
-Week 5
-
-
--  7 Feb (Mon): Newton's method and Cholesky factorization
-   - Chapter 5 of [Beck][BeckLink]
-   - [HW3](../homework/hw3) out
--  9 Feb (Wed): Linearly-constrained problems
-- 11 Feb (Fri): Convex sets
-  - Chapter 6 of [Beck][BeckLink]
-
-----
-Week 6
-
-
-- 14 Feb (Mon): Convex functions 
-   - Chapter 7 of [Beck][BeckLink]
-   - [HW3])(../homework/hw3) due
-- 16 Feb (Wed): Projected gradient method
-- 18 Feb (Fri): Midterm exam
-
-----
-Week 7
-
-
-- 21 Feb  Midterm break
-- 23 Feb  Midterm break
-- 25 Feb  Midterm break
-
-----
-Week 8
-
-
-- 28 Feb (Mon): Coordinate descent
--  2 Mar (Wed): Stochastic gradient descent
--  4 Mar (Fri): TBD
-
-----
-Week 9
-
-
--  7 Mar (Mon): TBD
--  9 Mar (Wed): TBD
-- 11 Mar (Fri): TBD
-
-----
-Week 10
-
-
-- 14 Mar (Mon): TBD
-- 16 Mar (Wed): TBD
-- 18 Mar (Fri): TBD
-
-----
-Week 11
-
-
-- 21 Mar (Mon): TBD
-- 23 Mar (Wed): TBD
-- 25 Mar (Fri): TBD
-
-----
-Week 12
-
-
-- 28 Mar (Mon): TBD
-- 30 Mar (Wed): TBD
--  1 Apr (Fri): TBD
-
-----
-Week 13
-
-
--  4 Apr (Mon): TBD
--  6 Apr (Wed): TBD
--  8 Apr (Fri, last-day of class): TBD
-  
-----
-
-- 12-27 Apr Final exam period
+| Date     | Lecture Topic | Readings  | Homework |
+| :---:    |    :----   | ---: | :---: |
+| Mon, January 10 | Introduction       | --  | [HW0](../homework/hw0) out |
+| Wed, January 12 | [Linear least-squares](least-squares)   |    --   | -- |
+| Fri, January 14 | [QR Factorization](qr-factorization) | -- | [HW0](../homework/hw0) due |
+| Mon, January 17 | [Regularized least-squares](regularized-least-squares) | -- | [HW1](../homework/hw1) out|
+| Wed, January 19 | [Regularizated least-squares](regularized-least-squares) (continued) | -- | -- | 
+| Fri, January 21 | [Gradients](gradients) | [Section 1.5.1](https://doi.org/10.1137/1.9781611973655.ch3) of [Beck][BeckLink] and Chapter 2 of [Kochenderfer and Wheeler][KochenderferLink] | -- |
+| Mon, January 24 | [Nonlinear least-squares](nonlinear-least-squares) | Sections [3.5](https://doi.org/10.1137/1.9781611973655.ch3) and [4.5](https://epubs.siam.org/doi/abs/10.1137/1.9781611973655.ch4) of [Beck][BeckLink] | [HW1](../homework/hw1) due |
+| Wed, January 26 | [Nonlinear least-squares](nonlinear-least-squares) (continued) | -- | -- |
+| Fri, January 28 | Unconstrained optimization | Required reading: Sections 4.1, 4.2, 4.4 of [Beck][BeckLink] | [HW2](../homework/hw2) out | 
+| Mon, January 31 | [Descent methods](/notes/gradient-descent.pdf), [demo](/notes/gradient-descent) | -- | -- |
+| Wed, February 2 | [Steepest descent](/notes/scaled-and-newton-descent.pdf) | -- | -- |
+| Fri, February 4 | Scaled descent | -- | [HW2](../homework/hw2) due |
+| Mon, February 7 | Newton's method and Cholesky factorization | Chapter 5 of [Beck][BeckLink] | [HW3](../homework/hw3) out |
+| Wed, February 9 | [Linearly-constrained problems](/notes/linear-constraints.pdf) | -- | -- | 
+| Fri, February 11 | Reduced-gradient method | -- | -- |
+| Mon, February 14 | [Convex sets](/notes/convex-sets.pdf) |  Chapter 6 of [Beck][BeckLink]| [HW3](../homework/hw3) due |
+| Wed, February 16 | Convex sets |  | -- |
+| Fri, February 18 | Midterm exam | -- | -- |
+| Mon, February 28 | [Convex functions](/notes/convex-functions.pdf) | Chapter 7 of [Beck][BeckLink] | -- |
+| Wed, March 2 | [Convex optimality](/notes/normal-cone-optimality.pdf) | -- | [HW4](../homework/hw4.pdf) out |
+| Fri, March 4 | [Projected gradient](/notes/projection.pdf) | -- | [solution to HW3 q2] (../homework/hw3q2.jl) out |
+| Mon, March 7 | [Convergence gradient descent](/notes/convergence-gradient-descent.pdf) | -- | -- |
+| Wed, March 9 | [Stochastic gradient descent](/notes/stochastic-gradient-descent.pdf) | -- | [HW4](../homework/hw4.pdf) due |
+| Fri, March 11 | [LP intro](/notes/lin-prog-apps.pdf) | Sections 6.4 and 8.2 of [Beck][BeckLink] | -- |
+| Mon, March 14 | [LP geometry](/notes/lp-geometry.pdf) |-- | -- |
+| Wed, March 16 | [LP standard form](/notes/lp-standard-form.pdf) | -- | -- |
+| Fri, March 18 | [LP simplex](lp-simplex.pdf) | -- | -- |
+| Mon, March 21 | LP simplex (cont'd) | -- | [HW5](../homework/hw5.pdf) |
+| Wed, March 23 | [LP simplex example](/notes/lp-simplex-example.pdf) | -- | -- |
+| Fri, March 25 | [LP 2-sided bounds and phase 1](/notes/lp-simplex-bnds-2phase.pdf), [Demo](/notes/lp-jump) | -- | -- |
+| Mon, March 28 | [LP duality](/notes/lp-duality.pdf), [Demo](/notes/lp-duality) | Section 12.3.1 of [Beck][BeckLink] | HW5 due |
+| Wed, March 30 | [LP & QP interior method](lp-qp-barrier.pdf) | -- | -- |
+| Fri, April 1 | [Matrix games](/notes/lp-games.pdf) | -- | [HW6](/homework/hw6.pdf) out (due Apr 11) | 
+| Mon, April 4 | [Max-flow/Min-cut](/notes/max-flow-min-cut.pdf) | -- | -- |
+| Wed, April 6 | TBD | -- | -- |
+| Fri, April 8 (last day of class) | TBD | -- | -- |
+| Wed, April 20| Final exam, 8:**30am** | | |
