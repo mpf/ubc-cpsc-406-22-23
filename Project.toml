@@ -14,8 +14,8 @@ RDatasets = "ce6b1742-4840-55fa-b093-852dadbb1d8b"
 StatsPlots = "f3b207a7-027a-5e70-b257-86293d7955fd"
 
 [compat]
-DataFramesMeta = "0.10"
 DataFrames = "1"
+DataFramesMeta = "0.10, 0.11"
 Franklin = "0.10"
 GLM = "1"
 Pluto = "0.18, 0.19"
