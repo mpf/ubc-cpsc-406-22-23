@@ -111,7 +111,7 @@ If we further assume that $A$ has full column rank, this inclusion tightens to a
 \theorem{QR factorization for full column rank matrices}{If $A=QR$ is the QR factorization of an $m$-by-$n$ matrix $A$ with full column rank, then the first $n$ columns of $Q$ form a basis for the range of $A$ and the remaining $m-n$ columns form a basis for its orthogonal complement:
 \begin{align*}
   \range(A) &= \range(Q_1) \quad \text{where}\quad Q_1 = \begin{bmatrix}q_1 & \cdots & q_n\end{bmatrix},
-\\\range(A)^\perp=\Null(A) &= \range(Q_2) \quad \text{where}\quad Q_2 = \begin{bmatrix}q_{n+1} & \cdots & q_m\end{bmatrix},
+\\\range(A)^\perp=\Null(A^T) &= \range(Q_2) \quad \text{where}\quad Q_2 = \begin{bmatrix}q_{n+1} & \cdots & q_m\end{bmatrix},
 \end{align*}
 and for $k=1,\ldots,n$,
 \begin{equation*}
