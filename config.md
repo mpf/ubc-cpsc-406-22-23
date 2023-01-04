@@ -18,6 +18,8 @@ generate_rss = true
 website_title = "UBC CPSC 406"
 website_descr = "Computational Optimization"
 website_url   = "https://friedlander.io/ubc-cpsc-406"
+
+auto_code_path = true
 +++
 
 \newcommand{\blurb}[1]{

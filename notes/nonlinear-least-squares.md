@@ -1,4 +1,4 @@
-@def reeval=true
+<!-- @def reeval=true -->
 # Nonlinear Least-Squares
 
 ```julia:setup
@@ -7,7 +7,6 @@ using Random; Random.seed!(12)
 ```
 
 \blurb{The nonlinear least-squares problem generalizes the linear least-squares problem to include nonlinear residual functions. The Gauss-Newton solves this problem as a sequence of least-squares subproblems.}
-
 
 ## Nonlinear residuals
 
@@ -25,7 +24,7 @@ is composed of differentiable nonlinear functions $r_{i}:\Rn→\R$. The non-line
 
 ## Linearizing the residual
 
-We can solve non-linear least squares problem \eqref{eq:nonlinear-ls} by solving a sequence of linear least-squares problem, which result from linearization of $r$ at the current estimate of the ground truth $x$. 
+We can solve non-linear least squares problem \eqref{eq:nonlinear-ls} by solving a sequence of linear least-squares problem, which result from linearization of $r$ at the current estimate of the ground truth $x$.
 
 The linear approximation of $r$ at a point $x^k \in \Rn$ is defined by
 
@@ -56,19 +55,21 @@ for $k=0,1,2,\ldots$
 If the linesearch parameter $\alpha$ is held fixed at 1, then this is a "pure" Gauss-Newton iteration. We'll later discuss options for when it's advisable to use smaller steps.
 
 Here's a basic version of the method that takes as arguments the residual and Jacobian functions `r` and `J`, and a starting vector `x`.
+
 ```!
 function gauss_newton(r, J, x; ε=1e-4, maxits=30)
-	err = []
-	for i = 1:maxits
-        rk, Jk = r(x), J(x)
-	    push!(err, norm(Jk'rk))
-	    err[end] ≤ ε && break
-        x = x - Jk\rk 
+  err = []
+  for i = 1:maxits
+      rk, Jk = r(x), J(x)
+      push!(err, norm(Jk'rk))
+      err[end] ≤ ε && break
+      x = x - Jk\rk 
     end
     return x, err
 end
 ; # hide
 ```
+
 The condition `err[end] ≤ ε` causes the iterations to terminate when the latest residual `rk` is nearly orthogonal to all the gradients of the residual, i.e., the residual is orthogonal to the tangent space of the level-set for the nonlinear least-squares objective $\half\|r(x)\|^2$. This is exactly analogous to the optimality condition for linear least-squares.
 
 ## Example: Position estimation from ranges
@@ -88,12 +89,14 @@ We can obtain an estimate of the object's position $x$ by solving the nonlinear 
 \end{equation*}
 
 Here's the residual function, which takes a vector of ranges $δ$ and a vector of positions `b`:
+
 ```!
 r(x, δ, b) = [ δ[i] - norm(x - b[:,i]) for i in 1:length(δ) ]
 ; #hide
 ```
 
-The following Julia packages for this example.
+Use the following Julia packages for this example.
+
 ```!
 using Random
 using Statistics
@@ -103,6 +106,7 @@ using Plots
 ```
 
 We simulate data by placing `m` beacons in random locations:
+
 ```!
 m = 13                 # number of beacons
 b = 2rand(2, m) .- 1   # place beacons uniformly in the unit box 
@@ -123,22 +127,26 @@ scatter!(x[1,:], x[2,:], label="true position", shape=:xcross, ms=7)
 scatter!(x0[1,:], x0[2,:], label="initial guess", c="yellow", ms=7)
 end
 plotmap(b, x, x0)
-savefig(joinpath(@OUTPUT,"map")) # hide
+savefig("map"); # hide
 ```
+
 \fig{map}
 
 ```!
 J(x) = ForwardDiff.jacobian(x->r(x, δ, b), x)
 xs, err = gauss_newton(x->r(x, δ, b), J, x0)
 plot(err, yaxis=:log)
-savefig(joinpath(@OUTPUT,"convergence")) # hide
+savefig("convergence"); # hide
 ```
+
 \fig{convergence}
 
 Plot the original map and overlay the obtained solution:
+
 ```!
 plotmap(b, x, x0)
 scatter!(xs[1,:], xs[2,:], label="solution", shape=:star7, c="green", ms=7)
-savefig(joinpath(@OUTPUT,"map-soln")) # hide
+savefig("map-soln"); # hide 
 ```
+
 \fig{map-soln}

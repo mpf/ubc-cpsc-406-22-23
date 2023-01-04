@@ -1,6 +1,6 @@
 # Computational Optimization
 
-CPSC 406 ∙ [Department of Computer Science](https://www.cs.ubc.ca) ∙ [UBC](https://www.ubc.ca)
+CPSC 406 ∙ Term 2 of 2021/22 ∙ [Department of Computer Science](https://www.cs.ubc.ca) ∙ [UBC](https://www.ubc.ca)
 
 \blurb{This course covers the main algorithms for continuous optimization, including unconstrained and constrained problems, and duality theory and sensitivity. Because linear algebra is central to the subject, the course also covers the main numerical linear algebra operations needed in optimization.}
 
