@@ -1,4 +1,4 @@
-name: Build and deploy Franklin
+name: Deploy Franklin site
 on:
   push:
     branches:
@@ -60,9 +60,8 @@ jobs:
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v4
       with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: __site
-        clean: true
-        single_commit: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          folder: __site
+          single_commit: true
 

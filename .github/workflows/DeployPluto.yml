@@ -1,4 +1,4 @@
-name: Export Pluto notebooks
+name: Deploy Pluto notebooks
 on:
     push:
         branches:
