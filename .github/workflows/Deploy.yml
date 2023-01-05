@@ -29,13 +29,13 @@ jobs:
       with:
         version: 1.8.4
 
-    - name: Cache Julia artifacts & such
+    - name: Cache Julia artifacts
       uses: julia-actions/cache@v1
       with:
         cache-registries: "true"
 
     # We set up a folder that Pluto can use to cache exported notebooks. If the notebook file did not change, then Pluto can take the exported file from cache instead of running the notebook.
-    - name: Set up notebook state cache
+    - name: Set up Pluto notebook state cache
       uses: actions/cache@v3
       with:
         path: pluto_state_cache
@@ -64,9 +64,11 @@ jobs:
                Export_cache_dir="pluto_state_cache",
                Export_create_index=false);
 
-            using NodeJS; run(`$(npm_cmd()) install highlight.js@10.7`);
-            using Franklin;
-            optimize(prepath="/ubc-cpsc-406/", minify=false)
+            import NodeJS
+            NodeJS.run(`$(npm_cmd()) install highlight.js@10.7`);
+
+            import Franklin;
+            Franklin.optimize(prepath="/ubc-cpsc-406/", minify=false)
             '
       env: 
           # Allows the use of unicode characters in Plots.jl
@@ -75,13 +77,11 @@ jobs:
           # and quality of output plots in GR back end.
           GKSwstype: "100"
 
-    - name: Build and Deploy
-      if: ${{ !env.ACT }}
+    - name: Deploy GitHub Page
       uses: JamesIves/github-pages-deploy-action@releases/v4
       with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: __site
-        clean: true
-        single_commit: true
+        token: ${{ secrets.GITHUB_TOKEN }}
+        branch: gh-pages
+        folder: __site
+        single-commit: true
 
