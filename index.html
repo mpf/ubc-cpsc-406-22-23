@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+    <link rel="stylesheet" href="/ubc-cpsc-406/css/jtd.css">
+  <link rel="icon" href="/ubc-cpsc-406/assets/favicon.ico">
+
+   <title>Computational Optimization</title>  
+</head>
+<body>                      <!-- closed in foot.html -->
+<div class="page-wrap">   <!-- closed in foot.html -->
+  <!-- SIDE BAR -->
+  <div class="side-bar">
+    <div class="header">
+      <a href="/ubc-cpsc-406/" class="title">
+        CPSC 406 
+      </a>
+    </div>
+    <label for="show-menu" class="show-menu">MENU</label>
+    <input type="checkbox" id="show-menu" role="button">
+    <div class="menu" id="side-menu">
+      <ul class="menu-list">
+        <li class="menu-list-parent active"><a href="/ubc-cpsc-406/" class="menu-list-link">Home</a>
+        <li class="menu-list-parent active"><a href="/ubc-cpsc-406/grades/" class="menu-list-link">Grades</a>
+        <li class="menu-list-parent "><a href="/ubc-cpsc-406/notes/" class="menu-list-link">Schedule</a>
+          <!-- <ul class="menu-list-child-list ">
+            <li class="menu-list-item {{ispage notes/least-squares}}active{{end}}"><a href="/ubc-cpsc-406/notes/least-squares" class="menu-list-link">Least-squares</a>
+            <li class="menu-list-item {{ispage notes/qr-factorization}}active{{end}}"><a href="/ubc-cpsc-406/notes/qr-factorization" class="menu-list-link">QR</a>
+            <li class="menu-list-item {{ispage notes/regularized-least-squares}}active{{end}}"><a href="/ubc-cpsc-406/notes/regularized-least-squares" class="menu-list-link">Regularization</a>
+            <li class="menu-list-item {{ispage notes/gradients}}active{{end}}"><a href="/ubc-cpsc-406/notes/gradients" class="menu-list-link">Gradients</a>
+            <li class="menu-list-item {{ispage notes/nonlinear-least-squares}}active{{end}}"><a href="/ubc-cpsc-406/notes/nonlinear-least-squares" class="menu-list-link">Nonlinear least squares</a>
+          </ul>  -->
+      </ul>
+    </div>
+    <div class="footer">
+      <!-- This is <em>Just the docs</em>, adapted from the <a href="https://github.com/pmarsceill/just-the-docs" target="_blank">Jekyll theme</a>. -->
+    </div>
+  </div>
+  <!-- CONTENT -->
+  <div class="main-content-wrap"> <!-- closed in foot.html -->
+    <div class="main-content">    <!-- closed in foot.html -->
+      <div class="main-header">
+        <a name="pagetop"></a>
+        <a id="github" href="https://github.com/mpf/ubc-cpsc-406/blob/main/index.md">Page source</a>
+		    <span style="width:30px; text-align: center;color:lightgray;">|</span>
+        <a id="github" href="https://github.com/mpf/ubc-cpsc-406">GitHub repo</a>
+      </div>
+
+
+
+<!-- Content appended here (in class franklin-content) -->
+<div class="franklin-content"><h1 id="computational_optimization"><a href="#computational_optimization" class="header-anchor">Computational Optimization</a></h1>
+<p>CPSC 406 ∙ Term 2 of 2021/22 ∙ <a href="https://www.cs.ubc.ca">Department of Computer Science</a> ∙ <a href="https://www.ubc.ca">UBC</a></p>
+
+    <span style="font-size:24px;font-weight:300;">This course covers the main algorithms for continuous optimization, including unconstrained and constrained problems, and duality theory and sensitivity. Because linear algebra is central to the subject, the course also covers the main numerical linear algebra operations needed in optimization.</span>
+    
+<p><div class="franklin-toc"><ol><li><a href="#lectures">Lectures</a></li><li><a href="#teaching_staff">Teaching staff</a></li><li><a href="#course_requirements">Course requirements</a></li><li><a href="#required_reading">Required reading</a></li><li><a href="#discussion_board_and_announcements">Discussion board and announcements</a></li></ol></div> </p>
+<h2 id="lectures"><a href="#lectures" class="header-anchor">Lectures</a></h2>
+
+<ul>
+<li><p>Mondays, Wednesdays, and Fridays, 2-3 pm</p>
+</li>
+<li><p>DMP 110</p>
+</li>
+</ul>
+<h2 id="teaching_staff"><a href="#teaching_staff" class="header-anchor">Teaching staff</a></h2>
+<ul>
+<li><p>Instructor: <a href="https://friedlander.io">Michael P. Friedlander</a></p>
+<ul>
+<li><p>Office hours: Mondays 3-4 pm &#40;see <a href="http://piazza.com/ubc.ca/winterterm22021/cpsc406/home">Piazza</a> for Zoom link&#41;</p>
+</li>
+</ul>
+</li>
+<li><p>Teaching Assistants:</p>
+<ul>
+<li><p>Curtis Fox, office hours: Tuesday 4pm-5:30pm</p>
+</li>
+<li><p>Naomi Graham, office hours: Wednesday 11am-12pm</p>
+</li>
+<li><p>Hamed Shirzad, office hours: Thursday 3:30pm-4:30pm</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="course_requirements"><a href="#course_requirements" class="header-anchor">Course requirements</a></h2>
+<p>One of the following courses are required: CPSC 302 &#40;Numerical Computation for Algebraic Problems&#41;, CPSC 303 &#40;Numerical Approximation and Discretization&#41;, or MATH 307 &#40;Applied Linear Algebra&#41;. You should be comfortable with an the main topics in applied linear algebra, multivariate calculus, and have experience in a numerical computing using a language such as Julia, Matlab, or Python.</p>
+<p>This courses uses <a href="https://julialang.org/">Julia</a> exclusively.</p>
+<h2 id="required_reading"><a href="#required_reading" class="header-anchor">Required reading</a></h2>
+<p>The course is based on a variety of sources, including lecture notes provided on these pages, which also provide links to supplementary reading materials. </p>
+<h2 id="discussion_board_and_announcements"><a href="#discussion_board_and_announcements" class="header-anchor">Discussion board and announcements</a></h2>
+<p>A student discussion board is hosted on <a href="http://piazza.com/ubc.ca/winterterm22021/cpsc406/home">Piazza</a>. All course announcements, including upcoming exams and homework deadlines, will appear on Piazza. Set your Piazza notifications appropriately. </p>
+<div class="note"><div class="title">⚠ Note</div>
+<div class="content"><a href="http://piazza.com/ubc.ca/winterterm22021/cpsc406">Register</a> for the Piazza board.</div></div>
+<div class="page-foot">
+  <div class="copyright">
+    &copy; Michael P. Friedlander | Last modified: January 05, 2023.
+  </br> Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+  </div>
+</div>
+</div><!-- CONTENT ENDS HERE -->
+    </div> <!-- end of class main-content -->
+    </div> <!-- end of class main-content-wrap -->
+    </div> <!-- end of class page-wrap-->
+    
+    
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+    <loc>https://friedlander.io/ubc-cpsc-406/index.html</loc>
+    <lastmod>2023-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://friedlander.io/ubc-cpsc-406/notes/least-squares/index.html</loc>
+    <lastmod>2023-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://friedlander.io/ubc-cpsc-406/notes/qr-factorization/index.html</loc>
+    <lastmod>2023-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://friedlander.io/ubc-cpsc-406/grades/index.html</loc>
+    <lastmod>2023-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://friedlander.io/ubc-cpsc-406/404/index.html</loc>
+    <lastmod>2023-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://friedlander.io/ubc-cpsc-406/notes/nonlinear-least-squares/index.html</loc>
+    <lastmod>2023-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://friedlander.io/ubc-cpsc-406/notes/gradients/index.html</loc>
+    <lastmod>2023-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://friedlander.io/ubc-cpsc-406/notes/index.html</loc>
+    <lastmod>2023-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://friedlander.io/ubc-cpsc-406/notes/regularized-least-squares/index.html</loc>
+    <lastmod>2023-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://friedlander.io/ubc-cpsc-406/notes/gradient-descent/</loc>
+    <lastmod>2023-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://friedlander.io/ubc-cpsc-406/homework/hw3/</loc>
+    <lastmod>2023-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://friedlander.io/ubc-cpsc-406/homework/hw2/</loc>
+    <lastmod>2023-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://friedlander.io/ubc-cpsc-406/homework/hw3q2/</loc>
+    <lastmod>2023-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://friedlander.io/ubc-cpsc-406/homework/hw0/</loc>
+    <lastmod>2023-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://friedlander.io/ubc-cpsc-406/homework/hw1/</loc>
+    <lastmod>2023-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://friedlander.io/ubc-cpsc-406/notes/lp-duality/</loc>
+    <lastmod>2023-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://friedlander.io/ubc-cpsc-406/notes/scaled-and-newton-descent/</loc>
+    <lastmod>2023-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://friedlander.io/ubc-cpsc-406/notes/lp-jump/</loc>
+    <lastmod>2023-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+</urlset>

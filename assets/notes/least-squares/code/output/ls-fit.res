@@ -1,0 +1,1 @@
+"/home/runner/work/ubc-cpsc-406/ubc-cpsc-406/__site/assets/notes/least-squares/code/output/ls-fit.png"
