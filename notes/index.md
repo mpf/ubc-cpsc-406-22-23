@@ -11,7 +11,7 @@ This schedule corresponds to the semester January to April, 2022.
 | Wed, January 12 | [Linear least-squares](least-squares)   |    --   | -- |
 | Fri, January 14 | [QR Factorization](qr-factorization) | -- | [HW0](../homework/hw0) due |
 | Mon, January 17 | [Regularized least-squares](regularized-least-squares) | -- | [HW1](../homework/hw1) out|
-| Wed, January 19 | [Regularizated least-squares](regularized-least-squares) (continued) | -- | -- | 
+| Wed, January 19 | [Regularized least-squares](regularized-least-squares) (continued) | -- | -- | 
 | Fri, January 21 | [Gradients](gradients) | [Section 1.5.1](https://doi.org/10.1137/1.9781611973655.ch3) of [Beck][BeckLink] and Chapter 2 of [Kochenderfer and Wheeler][KochenderferLink] | -- |
 | Mon, January 24 | [Nonlinear least-squares](nonlinear-least-squares) | Sections [3.5](https://doi.org/10.1137/1.9781611973655.ch3) and [4.5](https://epubs.siam.org/doi/abs/10.1137/1.9781611973655.ch4) of [Beck][BeckLink] | [HW1](../homework/hw1) due |
 | Wed, January 26 | [Nonlinear least-squares](nonlinear-least-squares) (continued) | -- | -- |
