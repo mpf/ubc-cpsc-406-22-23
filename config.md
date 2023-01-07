@@ -15,7 +15,7 @@ ignore = ["node_modules/"]
 
 # RSS (the website_{title, descr, url} must be defined to get RSS)
 generate_rss = true
-website_title = "UBC CPSC 406"
+website_title = "UBC CPSC 406 2022-T2"
 website_descr = "Computational Optimization"
 website_url   = "https://friedlander.io/ubc-cpsc-406"
 
@@ -24,7 +24,7 @@ auto_code_path = true
 
 \newcommand{\blurb}[1]{
     ~~~
-    <span style="font-size:24px;font-weight:300;">!#1</span>
+    <span class="blurb">!#1</span>
     ~~~
 }
 \newcommand{\refblank}[2]{

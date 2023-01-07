@@ -1,6 +1,6 @@
 # Computational Optimization
 
-CPSC 406 ∙ Term 2 of 2021/22 ∙ [Department of Computer Science](https://www.cs.ubc.ca) ∙ [UBC](https://www.ubc.ca)
+CPSC 406 ∙ Term 2 of 2022/23 ∙ [Department of Computer Science](https://www.cs.ubc.ca) ∙ [UBC](https://www.ubc.ca)
 
 \blurb{This course covers the main algorithms for continuous optimization, including unconstrained and constrained problems, and duality theory and sensitivity. Because linear algebra is central to the subject, the course also covers the main numerical linear algebra operations needed in optimization.}
 
@@ -10,21 +10,19 @@ CPSC 406 ∙ Term 2 of 2021/22 ∙ [Department of Computer Science](https://www.
 
 [PiazzaLink]: http://piazza.com/ubc.ca/winterterm22021/cpsc406/home
 
-- Mondays, Wednesdays, and Fridays, 2-3 pm
-- DMP 110
-<!-- - Online via Zoom until further notice (see [Piazza][PiazzaLink] for Zoom link) -->
+- Tuesday and Thursday, 11--12:30 pm 
+- DMP 310
 
 <!-- - [Hugh Dempster Pavillion (DMP 110)](https://ssc.adm.ubc.ca/classroomservices/function/viewlocation?userEvent=ShowLocation&buildingID=DMP&roomID=110) -->
 
 ## Teaching staff
 
-* Instructor: [Michael P. Friedlander](https://friedlander.io)
-    * Office hours: Mondays 3-4 pm (see [Piazza][PiazzaLink] for Zoom link)
-    
-* Teaching Assistants:
-  * Curtis Fox, office hours: Tuesday 4pm-5:30pm
-  * Naomi Graham, office hours: Wednesday 11am-12pm
-  * Hamed Shirzad, office hours: Thursday 3:30pm-4:30pm
+- Instructor: [Michael P. Friedlander](https://friedlander.io)
+  - Office hours: TBD 
+- Teaching Assistants:
+  - Naomi Graham, office hours: TBD
+  - Emma Hansen, office hours: TBD
+  - Jonas Jäger, office hours: TBD
 
 
 ## Course requirements
@@ -42,3 +40,22 @@ The course is based on a variety of sources, including lecture notes provided on
 A student discussion board is hosted on [Piazza][PiazzaLink]. All course announcements, including upcoming exams and homework deadlines, will appear on Piazza. Set your Piazza notifications appropriately. 
 
 \note{[Register](http://piazza.com/ubc.ca/winterterm22021/cpsc406) for the Piazza board.}
+
+## Grade distribution
+
+- assignments (5-6): 30%
+- midterm exam: 30%
+- final exam: 40%
+
+## Collaboration
+
+Most homeworks involve programming tasks. You may collaborate and consult with other students in the course, but you must hand in your own assignments. If you have collaborated or consulted with someone while working on your assignment, you must acknowledge this explicitly in your submitted assignment. If you are unsure about any of these rules, consult with one of the teaching staff or visit the departmental webpage on [Collaboration and Plagiarism](https://my.cs.ubc.ca/docs/collaboration-plagiarism).
+
+## Policies
+
+- No makeup exam for the midterm or final. If you missed the midterm exam you
+  must document a justification.
+- To pass the course you must do the assigned coursework, write the midterm and
+  final exams, pass the final exam, and obtain an overall pass average according
+  to the grading scheme.
+- The instructors reserve the right to modify the grading scheme at any time.
