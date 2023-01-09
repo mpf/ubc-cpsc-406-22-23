@@ -7,7 +7,7 @@
 
 | Date | Lecture Topic | Readings  | Homework |
 |:---|:---|:---|:---|
-| Tue, Jan-10 | Introduction | | [HW0](../homework/hw0) out |
+| Tue, Jan-10 | [Introduction](../slides/introduction) | | [HW0](../homework/hw0) out |
 | Thu, Jan-12 | [Linear least-squares](least-squares)  | | |
 | Tue, Jan-17 | [QR Factorization](qr-factorization) | | [HW0](../homework/hw0) due |
 | Thu, Jan-19 | [Regularized least-squares](regularized-least-squares) | | [HW1](../homework/hw1) out|

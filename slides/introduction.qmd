@@ -1,0 +1,127 @@
+---
+footer: UBC CPSC 406
+format:
+  revealjs:
+    multiplex: true
+    preview-links: auto
+    self-contained: true
+editor:
+    render-on-save: false
+html-math-method: mathjax
+number-sections: false
+slide-number: c/t
+width: 1280
+embed-resources: true
+---
+
+# Computational Optimization
+
+CPSC 406, Department of Computer Science
+
+Professor Michael P. Friedlander
+
+## Course goals and emphasis
+
+- recognize and formulate the main optimization problem classes
+- understand how to apply standard algorithms for each class
+- recognize that an algorithm has succeeded or failed
+- hands-on experience with mathematical software
+
+## Role of optimization
+
+- fitting a statistical model to data (machine learning)
+- logistics, economics, finance, risk management
+- theory of games and competition
+- theory of computer science and algorithms
+- geometry and  analysis
+
+## Learning models
+
+a **model** is a simplified abstraction of process
+
+- model parameters $x=(x_1,x_2,…,x_n)\in\mathcal{P}$
+- prediction $m(x)\in\mathcal{F}$
+  
+least-error principle: the **optimal parameters** $x^*$ minimizes the **distance** between the model and the observation
+
+## Mathematical Optimization
+
+- Objective function: $f:ℝ^n\toℝ$
+- feasible set (eg, "constraints"): $\mathcal{C}⊆ℝ^n$
+- decision variables: $x=(x_1,x_2,\ldots,x_n)\in\mathcal{C}$
+
+## Abstract problem
+
+- find $x\in\mathcal{C}$ such that $f(x)$ is minimal, eg,
+$$
+p^* = \min_{x\in\mathcal{C}}\ f(x)
+$$
+- optimal solution set
+$$\mathcal{S}:=\set{x\in\mathcal{C}\mid p^*=f(x)}$$
+
+## Gradients wanted 
+
+**Assume** the objective $f$ is differentiable on the **nonempty interior** of  the fesible set $\mathcal{C}\subseteq \mathbb{R}^n$
+
+$$
+\nabla f(x) = \begin{pmatrix}
+\frac{\partial f(x)}{\partial x_{1}} \\
+\vdots\\
+\frac{\partial f(x)}{\partial x_{n}}
+\end{pmatrix}
+$$
+
+- measures the objective's sensitivity to feasible perturbations
+- usually sufficient to devise tractable and implementable algorithms
+
+## Example: linear models
+
+data
+
+$$
+\begin{align}
+  A &= [a_1,a_2,\cdots,a_n],\ a_i\inℝ^m
+\\b &= (b_1,b_2,\ldots,b_m),\ b\inℝ^m
+\end{align}
+$$
+
+model:
+
+$$b\approx a_1 x_1 + a_2 x_2 + \cdots + a_nx_n=Ax$$
+
+- least-squares solution $x^*=(A^T A)^{-1}A^T b$
+- reliable and efficient algorithms and software
+- standard techniques for generalization 
+
+---
+
+- residual
+$$r:= b-Ax$$
+
+- least-squares approximation
+  $$\|r\|^2_2 = \sum_i{r_i}^2$$
+
+- least absolute-sum approximation
+  $$\|r\|_1 = |r_1| + \cdots + |r_m|$$
+
+
+
+## Coursework and evaluation
+
+- 6 homework assignments (30%)
+  - programming and mathematical deriviations
+  - typeset submissions, correctness, and writing quality graded
+  - collaborate 👯👯
+- midterm exam (30%): ✏️️ and 🗞️, short mathematical problems
+- final exam (40%): multiple choice
+
+## Software and Tooling
+
+- [Julia](https://julialang.org/) --- numerical software
+- Jupyter or Pluto for notebooks
+
+## Resources
+
+- see the [course home page](https://friedlander.io/ubc-cpsc-406) for schedule
+- announcements and discussions on [Piazza](https://piazza.com/ubc.ca/winterterm22022/cpsc406)
+  
