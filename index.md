@@ -8,9 +8,9 @@ CPSC 406 ∙ Term 2 of 2022/23 ∙ [Department of Computer Science](https://www.
 
 ## Lectures
 
-[PiazzaLink]: http://piazza.com/ubc.ca/winterterm22021/cpsc406/home
+[PiazzaLink]: http://piazza.com/ubc.ca/winterterm22022/cpsc406/home
 
-- Tuesday and Thursday, 11--12:30 pm 
+- Tuesday and Thursday, 11--12:30 pm
 - DMP 310
 
 <!-- - [Hugh Dempster Pavillion (DMP 110)](https://ssc.adm.ubc.ca/classroomservices/function/viewlocation?userEvent=ShowLocation&buildingID=DMP&roomID=110) -->
@@ -18,12 +18,11 @@ CPSC 406 ∙ Term 2 of 2022/23 ∙ [Department of Computer Science](https://www.
 ## Teaching staff
 
 - Instructor: [Michael P. Friedlander](https://friedlander.io)
-  - Office hours: TBD 
+  - Office hours: Wednesday, 2-3p (LSK 310)
 - Teaching Assistants:
   - Naomi Graham, office hours: TBD
-  - Emma Hansen, office hours: TBD
+  - Emma Hansen, office hours: Thursday, 1-2p (location TBD)
   - Jonas Jäger, office hours: TBD
-
 
 ## Course requirements
 
