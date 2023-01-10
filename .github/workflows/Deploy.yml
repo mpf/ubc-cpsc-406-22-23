@@ -7,6 +7,7 @@ on:
 
 jobs:
   build-and-deploy:
+    concurrency: ci-${{ github.ref }}
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
@@ -27,7 +28,7 @@ jobs:
     - name: Install Julia
       uses: julia-actions/setup-julia@v1
       with:
-        version: 1.8.4
+        version: 1.8
 
     # - name: Cache Julia artifacts
     #   uses: julia-actions/cache@v1
@@ -76,6 +77,13 @@ jobs:
           # Fixes 'GKS: can't connect to GKS socket application' errors
           # and quality of output plots in GR back end.
           GKSwstype: "100"
+
+    - name: Marp Build (slides folder)
+      uses: docker://marpteam/marp-cli:v1.7.0
+      with:
+          args: -I slides/ -o __site/slides/
+      env:
+          MARP_USER: root:root
 
     - name: Deploy GitHub Page
       uses: JamesIves/github-pages-deploy-action@releases/v4

@@ -1,17 +1,9 @@
 ---
-# footer: <a href="https://friedlander.io/ubc-cpsc-406">UBC CPSC 406</a>
-format:
-  revealjs:
-    multiplex: true
-    preview-links: auto
-    # smaller: true
-    self-contained: true
-embed-resources: true
-editor:
-    render-on-save: true
-html-math-method: mathjax
-slide-number: c/t
-width: 1280
+marp: true
+headingDivider: 2
+paginate: true
+math: katex
+footer: `<a href="https://friedlander.io/ubc-cpsc-406">CPSC 406</a>
 ---
 
 # Computational Optimization
@@ -22,6 +14,7 @@ Professor Michael P. Friedlander
 
 ## Course goals and emphasis
 
+<!-- paginate: true -->
 - recognize and formulate the main optimization problem classes
 - understand how to apply standard algorithms for each class
 - recognize that an algorithm has succeeded or failed
@@ -84,7 +77,8 @@ $$
 \end{align*}
 $$
 
-- least-squares approximation: $x^*=(A^T A)^{-1}A^T b$ minimizes $$f(x):=\|r(x)\|^2= \textstyle\sum_i[r(x)]_i^2$$
+- least-squares approximation: $x^*=(A^T A)^{-1}A^T b$ minimizes
+  $$f(x):=\|r(x)\|^2= \textstyle\sum_i[r(x)]_i^2$$
 - least absolute-sum approximation: no closed-form solution for minimizing
   $$f(x):=\|r(x)\|_1 = |r_1(x)| + \cdots + |r_m(x)|$$
 
@@ -103,9 +97,7 @@ Minimize number nurses needed to meet weekly staffing demands
 - minimize $\sum_j y_j$ subject to $y_j\ge d_j$ with $j\in1:7$
 - doesn't respect days off constraints
 
----
-
-## Scheduling: second attempt {.smaller}
+## Scheduling: second attempt
 
 let $x_j$ be number of nurses **starting** their 5-day shift on day $j$:
 
@@ -126,14 +118,12 @@ $$
 \end{array}
 $$
 
-
-- note the constraint structure. This is almost always
-    true of practical LPs
+- note the constraint structure. This is almost always true of practical LPs
 - we may want to restrict $x_{j}$ to be integer. This is a much harder problem!
 
 ## Coursework and evaluation
 
-- 6 homework assignments (30%)
+- 8 homework assignments (30%)
   - programming and mathematical deriviations
   - typeset submissions, correctness, and writing quality graded
 - midterm exam (30%): ✏️️ and 🗞️, short mathematical problems
