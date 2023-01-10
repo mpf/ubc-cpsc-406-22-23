@@ -11,14 +11,13 @@ github = "https://github.com/mpf/ubc-cpsc-406"
 # these files might be copied and, if markdown, processed by Franklin which
 # you might not want. Indicate directories by ending the name with a `/`.
 # Base files such as LICENSE.md and README.md are ignored by default.
-ignore = ["node_modules/", "scratch/"]
+ignore = ["node_modules/", "scratch/", "slides/"]
 
 # RSS (the website_{title, descr, url} must be defined to get RSS)
 generate_rss = true
 website_title = "UBC CPSC 406 2022-T2"
 website_descr = "Computational Optimization"
-website_url   = "https://friedlander.io/ubc-cpsc-406"
-
+website_url = "https://friedlander.io/ubc-cpsc-406"
 auto_code_path = true
 +++
 

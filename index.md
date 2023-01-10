@@ -18,10 +18,10 @@ CPSC 406 ∙ Term 2 of 2022/23 ∙ [Department of Computer Science](https://www.
 ## Teaching staff
 
 - Instructor: [Michael P. Friedlander](https://friedlander.io)
-  - Office hours: Wednesday, 2-3p (LSK 310)
+  - Office hours: TBD 
 - Teaching Assistants:
   - Naomi Graham, office hours: TBD
-  - Emma Hansen, office hours: Thursday, 1-2p (location TBD)
+  - Emma Hansen, office hours: TBD
   - Jonas Jäger, office hours: TBD
 
 
@@ -39,11 +39,11 @@ The course is based on a variety of sources, including lecture notes provided on
 
 A student discussion board is hosted on [Piazza][PiazzaLink]. All course announcements, including upcoming exams and homework deadlines, will appear on Piazza. Set your Piazza notifications appropriately. 
 
-\note{[Register](http://piazza.com/ubc.ca/winterterm22021/cpsc406) for the Piazza board.}
+\note{[Register][PiazzaLink] for the Piazza board.}
 
 ## Grade distribution
 
-- assignments (approximately 8): 30%
+- assignments (5-6): 30%
 - midterm exam: 30%
 - final exam: 40%
 
@@ -53,6 +53,9 @@ Most homeworks involve programming tasks. You may collaborate and consult with o
 
 ## Policies
 
-- No makeup exam for the midterm or final. If you missed the midterm exam you must document a justification.
-- To pass the course you must do the assigned coursework, write the midterm and final exams, pass the final exam, and obtain an overall pass average according to the grading scheme.
+- No makeup exam for the midterm or final. If you missed the midterm exam you
+  must document a justification.
+- To pass the course you must do the assigned coursework, write the midterm and
+  final exams, pass the final exam, and obtain an overall pass average according
+  to the grading scheme.
 - The instructors reserve the right to modify the grading scheme at any time.
