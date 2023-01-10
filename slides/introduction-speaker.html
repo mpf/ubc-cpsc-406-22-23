@@ -1208,27 +1208,55 @@ p^* = \min_{x\in\mathcal{C}}\ f(x)
 </section>
 <section id="example-linear-models" class="slide level2">
 <h2>Example: linear models</h2>
-<p>data</p>
 <p><span class="math display">\[
-\begin{align}
-  A &amp;= [a_1,a_2,\cdots,a_n],\ a_i\inℝ^m
-\\b &amp;= (b_1,b_2,\ldots,b_m),\ b\inℝ^m
-\end{align}
+\begin{align*}
+  \textrm{features}    \qquad A &amp;= [a_1,a_2,\cdots,a_n],\ a_i\inℝ^m
+\\\textrm{observations} \qquad b &amp;= (b_1,b_2,\ldots,b_m),\ b\inℝ^m
+\\ \textrm{linear model}      \qquad  b &amp;= m(x) + r, \qquad m(x):= Ax
+\end{align*}
 \]</span></p>
-<p>model:</p>
-<p><span class="math display">\[b\approx a_1 x_1 + a_2 x_2 + \cdots + a_nx_n=Ax\]</span></p>
 <ul>
-<li>least-squares solution <span class="math inline">\(x^*=(A^T A)^{-1}A^T b\)</span></li>
-<li>reliable and efficient algorithms and software</li>
-<li>standard techniques for generalization</li>
+<li>least-squares approximation: <span class="math inline">\(x^*=(A^T A)^{-1}A^T b\)</span> minimizes <span class="math display">\[f(x):=\|r(x)\|^2= \textstyle\sum_i[r(x)]_i^2\]</span></li>
+<li>least absolute-sum approximation: no closed-form solution for minimizing <span class="math display">\[f(x):=\|r(x)\|_1 = |r_1(x)| + \cdots + |r_m(x)|\]</span></li>
 </ul>
 </section>
-<section class="slide level2">
-
+<section id="example-scheduling" class="slide level2">
+<h2>Example: Scheduling</h2>
+<p>Minimize number nurses needed to meet weekly staffing demands</p>
+<h3 id="constraints">Constraints</h3>
 <ul>
-<li><p>residual <span class="math display">\[r:= b-Ax\]</span></p></li>
-<li><p>least-squares approximation <span class="math display">\[\|r\|^2_2 = \sum_i{r_i}^2\]</span></p></li>
-<li><p>least absolute-sum approximation <span class="math display">\[\|r\|_1 = |r_1| + \cdots + |r_m|\]</span></p></li>
+<li>each nurse works 5 straight days with 2 days off</li>
+<li><span class="math inline">\(d_j\)</span> nurses required on nights <span class="math inline">\(j=1,\ldots,7\)</span></li>
+</ul>
+<h3 id="first-attempt">First attempt</h3>
+<ul>
+<li><span class="math inline">\(y_j\)</span> nurses work on night <span class="math inline">\(j\)</span></li>
+<li>minimize <span class="math inline">\(\sum_j y_j\)</span> subject to <span class="math inline">\(y_j\ge d_j\)</span> with <span class="math inline">\(j\in1:7\)</span></li>
+<li>doesn’t respect days off constraints</li>
+</ul>
+</section>
+<section id="scheduling-second-attempt" class="slide level2 smaller">
+<h2>Scheduling: second attempt</h2>
+<p>let <span class="math inline">\(x_j\)</span> be number of nurses <strong>starting</strong> their 5-day shift on day <span class="math inline">\(j\)</span>:</p>
+<p><span class="math display">\[
+\begin{array}{ll}
+  \min &amp; x_{1} + x_{2} + x_{3} + x_{4} + x_{5} + x_{6} + x_{7} \\
+  \text{st}  &amp; \begin{aligned}
+                   x_{1}\phantom{+x_{2}+x_{3}}+x_{4}+x_{5}+x_{6}+x_{7}&amp;\ge d_{1}
+                 \\x_{1}+x_{2}\phantom{+x_{3}+x_{4}}+x_{5}+x_{6}+x_{7}&amp;\ge d_{2}
+                 \\x_{1}+x_{2}+x_{3}\phantom{+x_{4}+x_{5}}+x_{6}+x_{7}&amp;\ge d_{3}
+                 \\x_{1}+x_{2}+x_{3}+x_{4}\phantom{+x_{5}+x_{6}}+x_{7}&amp;\ge d_{4}
+                 \\x_{1}+x_{2}+x_{3}+x_{4}+x_{5}\phantom{+x_{6}+x_{7}}&amp;\ge d_{5}
+                 \\\phantom{x_{1}+}x_{2}+x_{3}+x_{4}+x_{5}+x_{6}\phantom{+x_{7}}&amp;\ge d_{6}
+                 \\\phantom{x_{1}+x_{2}+}x_{3}+x_{4}+x_{5}+x_{6}+x_{7}&amp;\ge d_{7}
+                 \\x_1,\ldots,
+                 x_7&amp;\ge0
+               \end{aligned}
+\end{array}
+\]</span></p>
+<ul>
+<li>note the constraint structure. This is almost always true of practical LPs</li>
+<li>we may want to restrict <span class="math inline">\(x_{j}\)</span> to be integer. This is a much harder problem!</li>
 </ul>
 </section>
 <section id="coursework-and-evaluation" class="slide level2">
@@ -1238,10 +1266,47 @@ p^* = \min_{x\in\mathcal{C}}\ f(x)
 <ul>
 <li>programming and mathematical deriviations</li>
 <li>typeset submissions, correctness, and writing quality graded</li>
-<li>collaborate 👯👯</li>
 </ul></li>
 <li>midterm exam (30%): ✏️️ and 🗞️, short mathematical problems</li>
 <li>final exam (40%): multiple choice</li>
+</ul>
+</section>
+<section id="programming-in-julia" class="slide level2">
+<h2>Programming in Julia</h2>
+<ul>
+<li>common programming languages in optimization: <a href="https://www.python.org/">Python</a>, <a href="https://www.mathworks.com/">Matlab</a>, <a href="https://www.r-project.org/">R</a>; C++</li>
+<li>we’ll use <a href="https://julialang.org/">Julia</a> only
+<ul>
+<li>Matlab-like syntax, but <strong>free</strong> and <strong>fast</strong></li>
+<li>lots of <a href="https://julialang.org/learning/">tutorials</a> available</li>
+</ul></li>
+<li><a href="https://plutojl.org/">Pluto</a> ❤️ or <a href="https://jupyter.org/">Jupyter</a> or ️notebooks highly recommended for assignments</li>
+</ul>
+</section>
+<section id="assignments" class="slide level2">
+<h2>Assignments</h2>
+<ul>
+<li>work alone or collaborate in pairs 👯
+<ul>
+<li>hand in your own assignment and list collaborators</li>
+</ul></li>
+<li>3 late days allowed (no permission required)
+<ul>
+<li><strong>but no more than</strong> 2 late days for a particular assignment</li>
+</ul></li>
+<li>no solutions posted online
+<ul>
+<li>come to office hours to see solutions</li>
+</ul></li>
+<li>submit solutions to Crowdmark</li>
+</ul>
+</section>
+<section id="homework-1" class="slide level2">
+<h2>Homework 1</h2>
+<ul>
+<li>no late days, no collaborators</li>
+<li>hints at required background</li>
+<li>due next week</li>
 </ul>
 </section>
 <section id="resources" class="slide level2">
@@ -1249,9 +1314,10 @@ p^* = \min_{x\in\mathcal{C}}\ f(x)
 <ul>
 <li>see the <a href="https://friedlander.io/ubc-cpsc-406">course home page</a> for schedule</li>
 <li>announcements and discussions on <a href="https://piazza.com/ubc.ca/winterterm22022/cpsc406">Piazza</a></li>
+<li>TA and instructor office hours start week 2</li>
 </ul>
 <div class="footer footer-default">
-<p>UBC CPSC 406</p>
+
 </div>
 </section></section>
     </div>

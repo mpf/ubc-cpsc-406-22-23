@@ -1,17 +1,17 @@
 ---
-footer: UBC CPSC 406
+# footer: <a href="https://friedlander.io/ubc-cpsc-406">UBC CPSC 406</a>
 format:
   revealjs:
     multiplex: true
     preview-links: auto
+    # smaller: true
     self-contained: true
+embed-resources: true
 editor:
-    render-on-save: false
+    render-on-save: true
 html-math-method: mathjax
-number-sections: false
 slide-number: c/t
 width: 1280
-embed-resources: true
 ---
 
 # Computational Optimization
@@ -76,52 +76,96 @@ $$
 
 ## Example: linear models
 
-data
-
 $$
-\begin{align}
-  A &= [a_1,a_2,\cdots,a_n],\ a_i\inℝ^m
-\\b &= (b_1,b_2,\ldots,b_m),\ b\inℝ^m
-\end{align}
+\begin{align*}
+  \textrm{features}    \qquad A &= [a_1,a_2,\cdots,a_n],\ a_i\inℝ^m
+\\\textrm{observations} \qquad b &= (b_1,b_2,\ldots,b_m),\ b\inℝ^m
+\\ \textrm{linear model}      \qquad  b &= m(x) + r, \qquad m(x):= Ax
+\end{align*}
 $$
 
-model:
+- least-squares approximation: $x^*=(A^T A)^{-1}A^T b$ minimizes $$f(x):=\|r(x)\|^2= \textstyle\sum_i[r(x)]_i^2$$
+- least absolute-sum approximation: no closed-form solution for minimizing
+  $$f(x):=\|r(x)\|_1 = |r_1(x)| + \cdots + |r_m(x)|$$
 
-$$b\approx a_1 x_1 + a_2 x_2 + \cdots + a_nx_n=Ax$$
+## Example: Scheduling
 
-- least-squares solution $x^*=(A^T A)^{-1}A^T b$
-- reliable and efficient algorithms and software
-- standard techniques for generalization 
+Minimize number nurses needed to meet weekly staffing demands
+
+### Constraints
+
+- each nurse works 5 straight days with 2 days off
+- $d_j$ nurses required on nights $j=1,\ldots,7$
+
+### First attempt
+
+- $y_j$ nurses work on night $j$
+- minimize $\sum_j y_j$ subject to $y_j\ge d_j$ with $j\in1:7$
+- doesn't respect days off constraints
 
 ---
 
-- residual
-$$r:= b-Ax$$
+## Scheduling: second attempt {.smaller}
 
-- least-squares approximation
-  $$\|r\|^2_2 = \sum_i{r_i}^2$$
+let $x_j$ be number of nurses **starting** their 5-day shift on day $j$:
 
-- least absolute-sum approximation
-  $$\|r\|_1 = |r_1| + \cdots + |r_m|$$
+$$
+\begin{array}{ll}
+  \min & x_{1} + x_{2} + x_{3} + x_{4} + x_{5} + x_{6} + x_{7} \\ 
+  \text{st}  & \begin{aligned}
+                   x_{1}\phantom{+x_{2}+x_{3}}+x_{4}+x_{5}+x_{6}+x_{7}&\ge d_{1}
+                 \\x_{1}+x_{2}\phantom{+x_{3}+x_{4}}+x_{5}+x_{6}+x_{7}&\ge d_{2}
+                 \\x_{1}+x_{2}+x_{3}\phantom{+x_{4}+x_{5}}+x_{6}+x_{7}&\ge d_{3}
+                 \\x_{1}+x_{2}+x_{3}+x_{4}\phantom{+x_{5}+x_{6}}+x_{7}&\ge d_{4}
+                 \\x_{1}+x_{2}+x_{3}+x_{4}+x_{5}\phantom{+x_{6}+x_{7}}&\ge d_{5}
+                 \\\phantom{x_{1}+}x_{2}+x_{3}+x_{4}+x_{5}+x_{6}\phantom{+x_{7}}&\ge d_{6}
+                 \\\phantom{x_{1}+x_{2}+}x_{3}+x_{4}+x_{5}+x_{6}+x_{7}&\ge d_{7}
+                 \\x_1,\ldots,
+                 x_7&\ge0
+               \end{aligned}
+\end{array}
+$$
 
 
+- note the constraint structure. This is almost always
+    true of practical LPs
+- we may want to restrict $x_{j}$ to be integer. This is a much harder problem!
 
 ## Coursework and evaluation
 
 - 6 homework assignments (30%)
   - programming and mathematical deriviations
   - typeset submissions, correctness, and writing quality graded
-  - collaborate 👯👯
 - midterm exam (30%): ✏️️ and 🗞️, short mathematical problems
 - final exam (40%): multiple choice
 
-## Software and Tooling
+## Programming in Julia
 
-- [Julia](https://julialang.org/) --- numerical software
-- Jupyter or Pluto for notebooks
+- common programming languages in optimization: [Python](https://www.python.org/), [Matlab](https://www.mathworks.com/), [R](https://www.r-project.org/); C++
+- we'll use [Julia](https://julialang.org/) only
+  - Matlab-like syntax, but **free** and **fast**
+  - lots of [tutorials](https://julialang.org/learning/) available
+- [Pluto](https://plutojl.org/) ❤️ or [Jupyter](https://jupyter.org/) or ️notebooks highly recommended for assignments
+
+## Assignments
+
+- work alone or collaborate in pairs 👯
+  - hand in your own assignment and list collaborators
+- 3 late days allowed (no permission required)
+  - **but no more than** 2 late days for a particular assignment
+- no solutions posted online
+  - come to office hours to see solutions
+- submit solutions to Crowdmark
+
+## Homework 1
+
+- no late days, no collaborators
+- hints at required background
+- due next week
 
 ## Resources
 
 - see the [course home page](https://friedlander.io/ubc-cpsc-406) for schedule
 - announcements and discussions on [Piazza](https://piazza.com/ubc.ca/winterterm22022/cpsc406)
+- TA and instructor office hours start week 2
   
