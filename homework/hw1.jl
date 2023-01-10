@@ -27,7 +27,7 @@ This first homework is modeled after first assignment for the really neat MIT co
 All homework assignments for CPSC 406 will be completed using a [Pluto notebook](https://github.com/fonsp/Pluto.jl). You will submit your notebook using Canvas.
 
 !!! deadline
-    This homework is due **Friday, January 17**.
+    This homework is due **Thursday, January 17**.
 
 
 """
