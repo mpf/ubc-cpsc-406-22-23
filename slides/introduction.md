@@ -3,8 +3,8 @@ marp: true
 headingDivider: 2
 paginate: true
 math: katex
-footer: `<a href="https://friedlander.io/ubc-cpsc-406">CPSC 406</a>
 ---
+<!-- footer: '[CPSC 406](https://friedlander.io/ubc-cpsc-406)' -->
 
 # Computational Optimization
 
@@ -14,7 +14,6 @@ Professor Michael P. Friedlander
 
 ## Course goals and emphasis
 
-<!-- paginate: true -->
 - recognize and formulate the main optimization problem classes
 - understand how to apply standard algorithms for each class
 - recognize that an algorithm has succeeded or failed
