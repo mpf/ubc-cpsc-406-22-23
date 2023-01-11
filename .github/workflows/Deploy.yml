@@ -79,9 +79,9 @@ jobs:
           GKSwstype: "100"
 
     - name: Marp Build (slides folder)
-      uses: docker://marpteam/marp-cli:v1.7.0
+      uses: docker://marpteam/marp-cli:v2.3.0
       with:
-          args: --pdf -I slides/ -o __site/slides/
+          args: -I slides/ -o __site/slides/
       env:
           MARP_USER: root:root
 
