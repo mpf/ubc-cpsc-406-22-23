@@ -77,15 +77,15 @@ The "speed of convergence" measures tells us how fast a sequence converges to it
 
 A sequence $\{x_k\}$ converging to $x^*$ is said to converge _linearly_ with rate $\mu$ if
 
-$$\lim_{k\to\infty} \frac{|x_{k+1}-x_k|}{|x_k-x^*|}=\mu\in(0,1).$$
+$$\lim_{k\to\infty} \frac{|x_{k+1}-x^*|}{|x_k-x^*|}=\mu\in(0,1).$$
 
 The sequence is said to converge _quadratically_ with rate $\mu$ if
 
-$$\lim_{k\to\infty} \frac{|x_{k+1}-x_k|}{|x_k-x^*|^2}=\mu\in(0,\infty).$$
+$$\lim_{k\to\infty} \frac{|x_{k+1}-x^*|}{|x_k-x^*|^2}=\mu\in(0,\infty).$$
 
 The sequence is said to converge _superlinearly_ if 
 
-$$\lim_{k\to\infty} \frac{|x_{k+1}-x_k|}{|x_k-x^*|}=0.$$
+$$\lim_{k\to\infty} \frac{|x_{k+1}-x^*|}{|x_k-x^*|}=0.$$
 
 ### Part a
 

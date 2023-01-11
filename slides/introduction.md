@@ -2,7 +2,6 @@
 marp: true
 headingDivider: 2
 paginate: true
-math: katex
 ---
 <!-- footer: '[CPSC 406](https://friedlander.io/ubc-cpsc-406)' -->
 
@@ -103,22 +102,21 @@ let $x_j$ be number of nurses **starting** their 5-day shift on day $j$:
 $$
 \begin{array}{ll}
   \min & x_{1} + x_{2} + x_{3} + x_{4} + x_{5} + x_{6} + x_{7} \\ 
-  \text{st}  & \begin{aligned}
-                   x_{1}\phantom{+x_{2}+x_{3}}+x_{4}+x_{5}+x_{6}+x_{7}&\ge d_{1}
-                 \\x_{1}+x_{2}\phantom{+x_{3}+x_{4}}+x_{5}+x_{6}+x_{7}&\ge d_{2}
-                 \\x_{1}+x_{2}+x_{3}\phantom{+x_{4}+x_{5}}+x_{6}+x_{7}&\ge d_{3}
-                 \\x_{1}+x_{2}+x_{3}+x_{4}\phantom{+x_{5}+x_{6}}+x_{7}&\ge d_{4}
-                 \\x_{1}+x_{2}+x_{3}+x_{4}+x_{5}\phantom{+x_{6}+x_{7}}&\ge d_{5}
-                 \\\phantom{x_{1}+}x_{2}+x_{3}+x_{4}+x_{5}+x_{6}\phantom{+x_{7}}&\ge d_{6}
+  \text{st}  & \begin{aligned}[t]
+           x_{1}\phantom{+x_2+x_3 }\ \ +x_{4}+x_{5}+x_{6}+x_{7}&\ge d_{1}
+                 \\x_{1}+x_{2}\phantom{+x_{3}+x_{4}}\ \ +x_{5}+x_{6}+x_{7}&\ge d_{2}
+                 \\x_{1}+x_{2}+x_{3}\phantom{+x_{4}+x_{5}}\ \ +x_{6}+x_{7}&\ge d_{3}
+                 \\x_{1}+x_{2}+x_{3}+x_{4}\phantom{+x_{5}+x_{6}}\ \ +x_{7}&\ge d_{4}
+                 \\x_{1}+x_{2}+x_{3}+x_{4}+x_{5}\phantom{+x_{6}+x_{7}}\ \ &\ge d_{5}
+                 \\\phantom{x_{1}+}x_{2}+x_{3}+x_{4}+x_{5}+x_{6}\phantom{+x_{7}}\ \ &\ge d_{6}
                  \\\phantom{x_{1}+x_{2}+}x_{3}+x_{4}+x_{5}+x_{6}+x_{7}&\ge d_{7}
-                 \\x_1,\ldots,
-                 x_7&\ge0
+                 \\x_1,\ldots,x_7&\ge0
                \end{aligned}
 \end{array}
 $$
 
 - note the constraint structure. This is almost always true of practical LPs
-- we may want to restrict $x_{j}$ to be integer. This is a much harder problem!
+- we may want to restrict $x_{j}$ to be integer. That's a much harder problem!
 
 ## Coursework and evaluation
 
