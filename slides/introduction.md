@@ -2,8 +2,9 @@
 marp: true
 headingDivider: 2
 paginate: true
+math: true
+footer: '[CPSC 406](https://friedlander.io/ubc-cpsc-406)'
 ---
-<!-- footer: '[CPSC 406](https://friedlander.io/ubc-cpsc-406)' -->
 
 # Computational Optimization
 
@@ -50,9 +51,9 @@ $$
 - optimal solution set
 $$\mathcal{S}:=\set{x\in\mathcal{C}\mid p^*=f(x)}$$
 
-## Gradients wanted 
+## Gradients wanted
 
-**Assume** the objective $f$ is differentiable on the **nonempty interior** of  the fesible set $\mathcal{C}\subseteq \mathbb{R}^n$
+**Assume** the objective $f$ is differentiable on the **nonempty interior** of  the feasible set $\mathcal{C}\subseteq \mathbb{R}^n$
 
 $$
 \nabla f(x) = \begin{pmatrix}
@@ -101,7 +102,7 @@ let $x_j$ be number of nurses **starting** their 5-day shift on day $j$:
 
 $$
 \begin{array}{ll}
-  \min & x_{1} + x_{2} + x_{3} + x_{4} + x_{5} + x_{6} + x_{7} \\ 
+  \min & x_{1} + x_{2} + x_{3} + x_{4} + x_{5} + x_{6} + x_{7} \\
   \text{st}  & \begin{aligned}[t]
            x_{1}\phantom{+x_2+x_3 }\ \ +x_{4}+x_{5}+x_{6}+x_{7}&\ge d_{1}
                  \\x_{1}+x_{2}\phantom{+x_{3}+x_{4}}\ \ +x_{5}+x_{6}+x_{7}&\ge d_{2}
