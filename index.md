@@ -11,9 +11,7 @@ CPSC 406 ∙ Term 2 of 2022/23 ∙ [Department of Computer Science](https://www.
 [PiazzaLink]: http://piazza.com/ubc.ca/winterterm22022/cpsc406/home
 
 - Tuesday and Thursday, 11--12:30 pm
-- DMP 310
-
-<!-- - [Hugh Dempster Pavillion (DMP 110)](https://ssc.adm.ubc.ca/classroomservices/function/viewlocation?userEvent=ShowLocation&buildingID=DMP&roomID=110) -->
+- [Hugh Dempster Pavillion (DMP 310)](https://ssc.adm.ubc.ca/classroomservices/function/viewlocation?userEvent=ShowLocation&buildingID=DMP&roomID=310)
 
 ## Teaching staff
 
@@ -22,7 +20,7 @@ CPSC 406 ∙ Term 2 of 2022/23 ∙ [Department of Computer Science](https://www.
 - Teaching Assistants:
   - Naomi Graham, office hours: TBD
   - Emma Hansen, office hours: Thursday, 1-2p (LSK 300C)
-  - Jonas Jäger, office hours: TBD
+  - Jonas Jäger, office hours: Monday, 12-1p (LSK 300B)
 
 ## Course requirements
 
@@ -32,11 +30,11 @@ This courses uses [Julia](https://julialang.org/) exclusively.
 
 ## Required reading
 
-The course is based on a variety of sources, including lecture notes provided on these pages, which also provide links to supplementary reading materials. 
+The course is based on a variety of sources, including lecture notes provided on these pages, which also provide links to supplementary reading materials.
 
 ## Discussion board and announcements
 
-A student discussion board is hosted on [Piazza][PiazzaLink]. All course announcements, including upcoming exams and homework deadlines, will appear on Piazza. Set your Piazza notifications appropriately. 
+A student discussion board is hosted on [Piazza][PiazzaLink]. All course announcements, including upcoming exams and homework deadlines, will appear on Piazza. Set your Piazza notifications appropriately.
 
 \note{[Register][PiazzaLink] for the Piazza board.}
 

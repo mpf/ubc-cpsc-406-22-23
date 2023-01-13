@@ -6,10 +6,6 @@
 
 \blurb{Linear least-squares, also known as ordinary linear regression, is a  basic optimization problem used for data fitting. It's also a fundamental building block for algorithms meant for more general problems.}
 
-### Required Reading
-
-- [Sections 3.1--3.2](https://doi.org/10.1137/1.9781611973655.ch3) of Beck. 
-
 ## Example: Multilinear regression
 
 We begin with a simple example and use linear regression to build a model that relates the fuel efficiency of a car with its weight, engine displacement, and engine horsepower.  Load the [`mtcars`](https://vincentarelbundock.github.io/Rdatasets/doc/datasets/mtcars.html) dataset provided in the [`Rdatasets.jl`](https://github.com/JuliaStats/RDatasets.jl) package:
@@ -118,11 +114,11 @@ where $A$ is an $m$-by-$n$ matrix, $b$ is an $m$-vector, $x$ is an $n$-vector, a
 
 The following fundamental result describes several equivalent conditions that any least-squares solution must satisfy.
 
-\theorem{Least-squares optimality}{The vector $x\LS$ solves the least-squares problem \eqref{eq:least-squares-problems} if and only if it satisfies the following equivalent conditions hold:
+\theorem{Least-squares optimality}{The vector $x\LS$ solves the least-squares problem \eqref{eq:least-squares-problems} if and only if it satisfies the following equivalent conditions:
 
 1. $A^T r = 0$, where $r=b-Ax$,
 2. $A\T A x = A^T b$,
-3. $y:=Ax$ is the unique orthogonal projection of $b$ onto $\range(A)$.
+3. $y:=Ax$ is the (unique) orthogonal projection of $b$ onto $\range(A)$.
 
 Moreover, $x\LS$ is the unique least-squares solution if and only if $A$ has full rank.
 }

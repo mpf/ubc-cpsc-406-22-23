@@ -72,7 +72,7 @@ end
 
 # ╔═╡ 5981a538-c243-4241-9634-51f42663288f
 md"""
-## Exercise 4
+## Exercise 3
 The "speed of convergence" measures tells us how fast a sequence converges to its limit (if one exists).
 
 A sequence $\{x_k\}$ converging to $x^*$ is said to converge _linearly_ with rate $\mu$ if
@@ -100,7 +100,7 @@ For much more on the speed of sequence convergence, see [How Many Steps Still Le
 
 # ╔═╡ 91d9170f-164a-49e4-8ea5-be2e573abb78
 md"""
-## Exercise 5: Eigenvalues
+## Exercise 4: Eigenvalues
 
 Prove that the eigenvalues of an orthogonal matrix $Q$ must all lie on the unit circle, i.e., every (possibly complex-valued) eigenvalue $\lambda$ of $Q$ has magnitude $|\lambda|=1$.
 

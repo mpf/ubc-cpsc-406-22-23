@@ -7,8 +7,8 @@
 
 | Date | Lecture Topic | Readings  | Homework |
 |:---|:---|:---|:---|
-| Tue, Jan-10 | [Introduction](../slides/introduction.html) | | [HW1](../homework/hw1) out |
-| Thu, Jan-12 | [Linear least-squares](least-squares)  | | |
+| Tue, Jan-10 | [Introduction](../slides/introduction.html) |  | [HW1](../homework/hw1) out |
+| Thu, Jan-12 | [Linear least-squares](least-squares)  | [Sections 3.1--3.2](https://doi.org/10.1137/1.9781611973655.ch3) of Beck, [Least-squares notes](https://ubcmath.github.io/MATH307/orthogonality/least_squares.html) of UBC Math 307 | |
 | Tue, Jan-17 | [QR Factorization](qr-factorization) | | [HW1](../homework/hw1) due |
 | Thu, Jan-19 | [Regularized least-squares](regularized-least-squares) | | HW2 out|
 | Tue, Jan-24 | [Gradients](gradients) | [Section 1.5.1](https://doi.org/10.1137/1.9781611973655.ch3) of [Beck][BeckLink] and Chapter 2 of [Kochenderfer and Wheeler][KochenderferLink] | |

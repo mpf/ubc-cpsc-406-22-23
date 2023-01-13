@@ -1,3 +1,4 @@
+.vscode/
 __site/
 .DS_Store
 node_modules/
