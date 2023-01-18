@@ -107,12 +107,12 @@ function lsup(D, b; its=4)
 	r = b
 	x = []; idx = []; S = zeros(length(b), 0)
 	for i in 1:its
-		z = D'r
-		j = findmax(abs, z)[2]
+		z = # fill in
+		j = # fill in
 		push!(idx, j)
-		S = [S D[:,j]]
-		x = S\b
-		r = b - S*x
+		S = # fill in
+		x = # fill in
+		r = # fill in
 	end
 	return idx, x
 end
@@ -206,7 +206,7 @@ PLUTO_MANIFEST_TOML_CONTENTS = """
 
 julia_version = "1.8.5"
 manifest_format = "2.0"
-project_hash = "8dc1885794cc99ad9d589b75ac020ff944c385c8"
+project_hash = "6b2dbdb84cb26a1ca30732c743bd73e0c452e62b"
 
 [[deps.AbstractFFTs]]
 deps = ["ChainRulesCore", "LinearAlgebra"]
