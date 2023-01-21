@@ -8,10 +8,7 @@ using InteractiveUtils
 using FFTW, Random, LinearAlgebra, Plots
 
 # ╔═╡ ad9518bb-471d-48f9-abc1-3e3ecac3bf0c
-md"""# Homework 2
-!!! deadline
-    Tuesday, 26 January, 11:55pm
-"""
+md"""# Homework 2"""
 
 # ╔═╡ f93a3136-7812-11ec-2c52-e30ce2ff34ca
 # Fill in your name and student ID
