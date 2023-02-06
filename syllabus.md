@@ -12,10 +12,10 @@
 | Tue, Jan-17 | [QR Factorization](/notes/qr-factorization) | | [HW1](/homework/hw1) due |
 | Thu, Jan-19 | [Regularized least-squares](/notes/regularized-least-squares) | | [HW2](/homework/hw2) out|
 | Tue, Jan-24 | [Gradients](/notes/gradients) | Section 1.5.1 of [Beck][BeckLink]; Chapter 2 of [Kochenderfer and Wheeler][KochenderferLink]; [Automatic differentiation from scratch, in 10 lines of Julia](https://vladium.com/tutorials/study_julia_with_me/multiple_dispatch/) | |
-| Thu, Jan-26 | [Nonlinear least-squares](/notes/nonlinear-least-squares) | Sections [3.5](https://doi.org/10.1137/1.9781611973655.ch3) and [4.5](https://epubs.siam.org/doi/abs/10.1137/1.9781611973655.ch4) of [Beck][BeckLink] | [HW2](/homework/hw2) due |
+| Thu, Jan-26 | [Nonlinear least-squares](/notes/nonlinear-least-squares) | Sections 3.5 and 4.5 of [Beck][BeckLink] | [HW2](/homework/hw2) due |
 | Tue, Jan-31 | Unconstrained optimization | Sections 4.1, 4.2, 4.4 of [Beck][BeckLink] | [HW3](/homework/hw3) out |
 | Thu, Feb-2  | [Descent methods](/notes/gradient-descent.pdf), [demo](/notes/gradient-descent) | | |
-| Tue, Feb-7  | [Scaled descent](/notes/scaled-and-newton-descent.pdf) | | [HW3](/homework/hw3) due |
+| Tue, Feb-7  | [Scaled descent](/notes/scaled-and-newton-descent.pdf) | Section 4.4 of [Beck][BeckLink] | [HW3](/homework/hw3) due |
 | Thu, Feb-9  | Newton's method and Cholesky| Chapter 5 of [Beck][BeckLink] | HW4 out |
 | Tue, Feb-14 | [Linear constraints and reduced gradient](/notes/linear-constraints.pdf) | | |
 | Thu, Feb-16 | quasi-Newton methods | | HW4 due|

@@ -16,11 +16,11 @@ CPSC 406 ∙ Term 2 of 2022/23 ∙ [Department of Computer Science](https://www.
 ## Teaching staff
 
 - Instructor: [Michael P. Friedlander](https://friedlander.io)
-  - Office hours: Wednesday, 2-3p (LSK 300C)
+  - Office hours: Wednesday, 2-3p (LSK 300)
 - Teaching Assistants:
-  - Naomi Graham, office hours: TBD
-  - Emma Hansen, office hours: Thursday, 1-2p (LSK 300C)
-  - Jonas Jäger, office hours: Monday, 12-1p (LSK 300B)
+  - Naomi Graham, office hours: Tuesday, 3-4p (LSK 300)
+  - Emma Hansen, office hours: Thursday, 1-2p (LSK 300)
+  - Jonas Jäger, office hours: Monday, 12-1p (LSK 300)
 
 ## Course requirements
 
