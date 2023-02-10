@@ -1,6 +1,7 @@
 # Homework 3
 
 ## Q1. Quadratic functions
+
 - Beck, Exercise 2.19
 
 ## Q2. Homogeneity of the directional derivative
