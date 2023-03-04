@@ -172,8 +172,8 @@ end
 
 # ╔═╡ 93416c0d-7b58-4bff-989d-627b49f1233f
 qc, qctrace = let
-	α = .01 # "optimal"
-	A = [1. 0; 0 2]  # L = 2
+	α = 2 # "optimal"
+	A = [1. 0; 0 2]  # L = 2 => α ∈ (0, 2/L) == (0, 1)
 	b = [0., 0]
 	x0 = [2., 1]
 	
@@ -229,7 +229,7 @@ end
 log(qtrace)
 
 # ╔═╡ 517d402f-19af-428f-9552-fbfc4561df43
-log(qctrace);
+log(qctrace)
 
 # ╔═╡ ee382544-49e1-4e50-8db2-b890d0fb8e29
 collectx(states::Vector{State}) = reduce(hcat, s.x for s in states)

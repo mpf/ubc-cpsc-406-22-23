@@ -35,6 +35,6 @@
 | Thu, Apr-6  | [LP duality](/notes/lp-duality.pdf), [Demo](/notes/lp-duality) | Section 12.3.1 of [Beck][BeckLink] |  |
 | Tue, Apr-11 | [LP & QP interior method](/notes/lp-qp-barrier.pdf) | | |
 | Thu, Apr-13 | [Matrix games](/notes/lp-games.pdf) | | HW8 due |
-| TBD | Final exam | | |
+| Fri, Apr-21 | Final exam, 7pm | | |
 <!-- | Thu, Apr-13 | [Matrix games](/notes/lp-games.pdf) | | [HW6](/homework/hw6.pdf) out (due Apr 11) |  -->
 <!-- | Mon, Apr-4 | [Max-flow/Min-cut](/notes/max-flow-min-cut.pdf) | | | -->
