@@ -18,13 +18,13 @@
 "Tue, Mar-7", [Convex sets](/notes/convex-sets.pdf) ,Sections 6.1—6.4 of [Beck][BeckLink],[HW5](/homework/hw5) out
 "Thu, Mar-9", [Convex functions](/notes/convex-functions.pdf) ,Sections 7.1—7.6 of [Beck][BeckLink],
 "Tue, Mar-14", [Convex optimality](/notes/normal-cone-optimality.pdf) , ,[HW5](/homework/hw5) due
-"Thu, Mar-16", [Projected and proximal gradient](/notes/projection.pdf) , ,HW6 out
-"Tue, Mar-21", [Convergence gradient descent](/notes/convergence-gradient-descent.pdf) , ,
-"Thu, Mar-23", [Stochastic gradient descent](/notes/stochastic-gradient-descent.pdf) ,Sections 6.4 and 8.2 of [Beck][BeckLink],HW6 due
-"Tue, Mar-28", [LP intro](/notes/lin-prog-apps.pdf) and [geometry](/notes/lp-geometry.pdf) ,,HW7 out
+"Thu, Mar-16", [Projected and proximal gradient](/notes/projection.pdf) , ,
+"Tue, Mar-21", [Convergence gradient descent](/notes/convergence-gradient-descent.pdf) , ,HW6 out
+"Thu, Mar-23", [Stochastic gradient descent](/notes/stochastic-gradient-descent.pdf) ,Sections 6.4 and 8.2 of [Beck][BeckLink],
+"Tue, Mar-28", [LP intro](/notes/lin-prog-apps.pdf) and [geometry](/notes/lp-geometry.pdf) ,,HW6 due
 "Thu, Mar-30", [LP standard form](/notes/lp-standard-form.pdf) , ,
-"Tue, Apr-4","[LP simplex](/notes/lp-simplex.pdf), [LP simplex example](/notes/lp-simplex-example.pdf), [LP 2-sided bounds and phase 1](/notes/lp-simplex-bnds-2phase.pdf), [Demo](/notes/lp-jump)", ,HW7 due
-"Thu, Apr-6"," [LP duality](/notes/lp-duality.pdf), [Demo](/notes/lp-duality) ",Section 12.3.1 of [Beck][BeckLink],HW8 out
-"Tue, Apr-11", [LP & QP interior method](/notes/lp-qp-barrier.pdf) , , 
+"Tue, Apr-4","[LP simplex](/notes/lp-simplex.pdf), [LP simplex example](/notes/lp-simplex-example.pdf), [LP 2-sided bounds and phase 1](/notes/lp-simplex-bnds-2phase.pdf), [Demo](/notes/lp-jump)", ,HW7 out
+"Thu, Apr-6"," [LP duality](/notes/lp-duality.pdf), [Demo](/notes/lp-duality) ",Section 12.3.1 of [Beck][BeckLink],
+"Tue, Apr-11", [LP & QP interior method](/notes/lp-qp-barrier.pdf) , ,HW7 due
 "Thu, Apr-13", [Matrix games](/notes/lp-games.pdf) , ,
-"Fri, Apr-21","Final exam, 7pm", , 
+"Fri, Apr-21","Final exam, 7pm", ,HW 8 out
