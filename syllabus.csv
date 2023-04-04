@@ -23,7 +23,7 @@
 "Thu, Mar-23"," [Stochastic gradient descent](/notes/stochastic-gradient-descent.pdf) ",Sections 6.4 and 8.2 of [Beck][BeckLink],
 "Tue, Mar-28"," [LP intro](/notes/lin-prog-apps.pdf) and [geometry](/notes/lp-geometry.pdf) ",,HW6 due
 "Thu, Mar-30"," [LP standard form](/notes/lp-standard-form.pdf) "," ",
-"Tue, Apr-4","[LP simplex](/notes/lp-simplex.pdf), [LP simplex example](/notes/lp-simplex-example.pdf), [LP 2-sided bounds and phase 1](/notes/lp-simplex-bnds-2phase.pdf), [Demo](/notes/lp-jump)"," ",HW7 out
+"Tue, Apr-4","[LP simplex](/notes/lp-simplex.pdf), [LP simplex example](/notes/lp-simplex-example.pdf), [LP 2-sided bounds and phase 1](/notes/lp-simplex-bnds-2phase.pdf), [Demo](/notes/lp-jump)"," ",[HW7](/homework/projection-hw7) out
 "Thu, Apr-6"," [LP duality](/notes/lp-duality.pdf), [Demo](/notes/lp-duality) ",Section 12.3.1 of [Beck][BeckLink],
 "Tue, Apr-11"," [LP & QP interior method](/notes/lp-qp-barrier.pdf) "," ",HW7 due
 "Thu, Apr-13"," [Matrix games](/notes/lp-games.pdf) "," ",
