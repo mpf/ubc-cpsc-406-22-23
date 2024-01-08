@@ -5,7 +5,7 @@ Add here global page variables to use throughout your website.
 author = "Michael P. Friedlander"
 mintoclevel = 2
 
-github = "https://github.com/mpf/ubc-cpsc-406"
+github = "https://github.com/mpf/ubc-cpsc-406-22-23"
 
 # Add here files or directories that should be ignored by Franklin, otherwise
 # these files might be copied and, if markdown, processed by Franklin which
@@ -17,7 +17,7 @@ ignore = ["node_modules/", "scratch/", "slides/"]
 generate_rss = true
 website_title = "UBC CPSC 406 2022-T2"
 website_descr = "Computational Optimization"
-website_url = "https://friedlander.io/ubc-cpsc-406"
+website_url = "https://friedlander.io/ubc-cpsc-406-22-23"
 auto_code_path = true
 +++
 
