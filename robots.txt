@@ -1,0 +1,4 @@
+Sitemap: https://friedlander.io/ubc-cpsc-406-22-23/sitemap.xml
+
+User-agent: *
+Disallow:

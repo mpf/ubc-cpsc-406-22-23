@@ -1,0 +1,2 @@
+norm(∇f(x̄)) = 0.0
+isposdef(∇²f(x̄)) = true
